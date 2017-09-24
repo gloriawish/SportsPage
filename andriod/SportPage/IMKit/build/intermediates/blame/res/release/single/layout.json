@@ -1,0 +1,406 @@
+[
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_location_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_location_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_wi_notice.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_wi_notice.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_evaluate.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_evaluate.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_dialog_popup_prompt.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_dialog_popup_prompt.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_rich_content_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_rich_content_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_sub_menu_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_sub_menu_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_multi_rich_content_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_multi_rich_content_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_plugin_grid_view.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_plugin_grid_view.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_input_menu.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_input_menu.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_discussion_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_discussion_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_leave_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_leave_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_preview.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_preview.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_file_list.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_file_list.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_plugin_pager.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_plugin_pager.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_dialog_popup_options_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_dialog_popup_options_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_webview.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_webview.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_root_menu_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_root_menu_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_input_menus.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_input_menus.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_conversationlist.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_conversationlist.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_emoji_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_emoji_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_group_information_notification_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_group_information_notification_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_plugin_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_plugin_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_menu_container.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_menu_container.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_photo.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_photo.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_grid_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_grid_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_dialog_popup_prompt_warning.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_dialog_popup_prompt_warning.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_icon_rt_location_marker.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_icon_rt_location_marker.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_wi_block_popup.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_wi_block_popup.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_file_download.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_file_download.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picprev_activity.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picprev_activity.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_file_list.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_file_list.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_pic_popup_window.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_pic_popup_window.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_extension_bar.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_extension_bar.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_rich_content_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_rich_content_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_dialog_popup_options.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_dialog_popup_options.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_plugin_location_activity.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_plugin_location_activity.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_progress.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_progress.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_messagelist.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_messagelist.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_item_single_choice.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_item_single_choice.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_dialog_alter.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_dialog_alter.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_single_choice_layout.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_single_choice_layout.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_public_service_sub_list.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_public_service_sub_list.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_original.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_original.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_indicator.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_indicator.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_image.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_image.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_refresh_list_view.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_refresh_list_view.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_share_location_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_share_location_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_preview_fragment.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_preview_fragment.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_text_message_evaluate.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_text_message_evaluate.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_voice_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_voice_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_camera.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_camera.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_emoticon_tab_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_emoticon_tab_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_conversation_member.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_conversation_member.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_public_service_search.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_public_service_search.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_location_preview_activity.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_location_preview_activity.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_app_service_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_app_service_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_voice_input.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_voice_input.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_mention_members.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_mention_members.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_system_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_system_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_emoji_pager.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_emoji_pager.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_alert_human_evaluation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_alert_human_evaluation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_discussion_notification_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_discussion_notification_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_base_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_base_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_wi_file_list_adapter.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_wi_file_list_adapter.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_emoticon_tab_container.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_emoticon_tab_container.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_notification_realtime_location.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_notification_realtime_location.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_catalog_listview.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_catalog_listview.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_wi_vo_popup.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_wi_vo_popup.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_file_manager.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_file_manager.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_sub_menu_container.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_sub_menu_container.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fragment_base_setting.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fragment_base_setting.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_albums.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_albums.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_conversation_member_list.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_conversation_member_list.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_location_real_time_activity.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_location_real_time_activity.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_group_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_group_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_grid_camera.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_grid_camera.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_emoji_grid_view.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_emoji_grid_view.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_conversation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_conversation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_information_notification_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_information_notification_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_search.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_search.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_picsel_activity.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_picsel_activity.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_alert_warning.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_alert_warning.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ext_input_edit_text.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ext_input_edit_text.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_camera.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_camera.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_cs_alert_robot_evaluation.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_cs_alert_robot_evaluation.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_input_menu_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_input_menu_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_conversation_notification_container.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_conversation_notification_container.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_base_activity_layout.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_base_activity_layout.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_public_service_list.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_public_service_list.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_wi_block.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_wi_block.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_file_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_file_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_ac_picture_pager.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_ac_picture_pager.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_text_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_text_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_item_image_message.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_item_image_message.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_mention_list_item.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_mention_list_item.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_fr_public_service_inf.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_fr_public_service_inf.xml"
+    },
+    {
+        "merged": "/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/res/merged/release/layout/rc_input_pager_layout.xml",
+        "source": "/Users/zz/Desktop/运动页/SportPage/IMKit/src/main/res/layout/rc_input_pager_layout.xml"
+    }
+]

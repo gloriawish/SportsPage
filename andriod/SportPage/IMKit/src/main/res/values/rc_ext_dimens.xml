@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rc_popup_dialog_distance_to_edge">40dp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.rong.imkit.widget.RCMessageFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/rc_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+
+    <io.rong.imkit.widget.AsyncImageView
+        android:id="@id/rc_img"
+        android:layout_width="204dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        app:RCMask="true"
+        app:RCDefDrawable="@drawable/rc_ic_location_item_default" />
+
+    <TextView
+        android:id="@id/rc_content"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|left"
+        android:background="@drawable/rc_corner_location_style"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:maxLines="2"
+        android:textSize="14sp" />
+</io.rong.imkit.widget.RCMessageFrameLayout>

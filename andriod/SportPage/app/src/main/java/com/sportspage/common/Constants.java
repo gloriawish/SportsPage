@@ -6,15 +6,15 @@ package com.sportspage.common;
 
 public class Constants {
     //微信APP相关
-    public static final String APP_ID = "wxa71dfc4fdd43b2d3";
-    public static final String APP_SECRET = "6c0316720a72953ed663f8b1dff32eba";
+    public static final String APP_ID = "xxxxxxxx"; 
+    public static final String APP_SECRET = "xxxxxxxx";
     //QQ相关
-    public static final String QQ_APP_ID = "1105901492";
+    public static final String QQ_APP_ID = "xxxxxxxx";
 
-    public static final String BUGLY_APP_ID = "a358aa5964";
+    public static final String BUGLY_APP_ID = "xxxxxxxx";
 
     /** 计算请求参数签名 */
-    public static final String SECRET = "www.sportspage.cn";
+    public static final String SECRET = "ssssss";//任意字符串都可以，和服务器匹配就行
     public static final String FEEDBACK_TYPE = "Android";
 
     /** 服务器返回的请求码 */
