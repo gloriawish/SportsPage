@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AE000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_type_content"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/bg_corners"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:rowCount="2"
+            android:columnCount="1"
+            android:layout_marginTop="20dp"
+            android:layout_height="130dp">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="65dp" >
+                <ImageView
+                    android:id="@+id/iv_type_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_badminton"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_football"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_basketball"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_teinnis"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_jogging"
+                    />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="65dp" >
+                <ImageView
+                    android:id="@+id/iv_type_6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_swimming"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_squash"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_kayak"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_9"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_baseball"
+                    />
+                <ImageView
+                    android:id="@+id/iv_type_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sports_create_pingpang"
+                    />
+            </LinearLayout>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.4"
+                android:background="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/or"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.4"
+                android:background="@color/black"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sport_type"
+            style="@style/bottomBtn_Style"
+            android:layout_marginTop="5dp"
+            android:text="@string/custom"
+            />
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_sport_type_close"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_alignRight="@id/ll_type_content"-->
+        <!--android:layout_alignTop="@id/ll_type_content"-->
+        <!--android:src="@drawable/sports_create_exit"/>-->
+
+</RelativeLayout>

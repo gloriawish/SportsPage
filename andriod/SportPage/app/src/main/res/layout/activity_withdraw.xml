@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_withdraw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.WithDrawActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textColor="@color/text_color_gray"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:text="提现至" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_item_height"
+        android:paddingRight="16dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/alipay_id"/>
+
+        <EditText
+            android:id="@+id/et_alipay_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:hint="@string/please_input_alipay"
+
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingRight="16dp"
+        android:layout_height="@dimen/other_item_height"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/account_name"/>
+
+        <EditText
+            android:id="@+id/et_withdraw_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/gray"
+            android:hint="@string/please_input_name"
+
+            />
+    </RelativeLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_item_height"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/rl_withdraw_way"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/withdraw_num"/>
+
+        <EditText
+            android:id="@+id/et_withdraw_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textSize="14sp"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:inputType="number"
+            android:textColorHint="@color/gray"
+            android:hint="@string/yuan"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_withdraw_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_color_orange"
+            android:text="@string/all_withdraw"/>
+
+        <TextView
+            android:id="@+id/tv_withdraw_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_gray"
+            android:layout_toLeftOf="@id/tv_withdraw_all"
+            android:text="可提现金额0.00元"
+            />
+        
+        <Button
+            android:id="@+id/btn_withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/other_item_height"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="54dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_bg_blue"
+            android:text="@string/comfirm_withdraw"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

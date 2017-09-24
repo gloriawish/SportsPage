@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <com.sportspage.view.XScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="50px"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_profile_bg"
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_window" />
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="128px"
+                app:layout_auto_baseheight="width"
+                android:background="@drawable/head_circle"
+                android:scaleType="centerCrop" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/riv_profile_img"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                app:layout_auto_baseheight="width"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="138px"
+                android:background="@drawable/head_circle"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="128px" />
+            
+            <TextView
+                android:id="@+id/tv_profile_username"
+                android:layout_width="match_parent"
+                android:layout_marginTop="340px"
+                android:textSize="24px"
+                android:text="这是用户名"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/iv_profile_bg"
+                android:layout_height="wrap_content">
+                
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:layout_height="150px">
+                    
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_sportspage"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/setting_item_selector"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="90px"
+                            android:layout_marginLeft="60px"
+                            android:src="@drawable/mine_sports_page"
+                            android:layout_marginRight="10px"
+                            android:layout_height="90px" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="我的运动页"
+                            android:layout_height="wrap_content" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10px"
+                        android:background="@color/gray"
+                        android:layout_marginBottom="10px" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_create"
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/setting_item_selector"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="90px"
+                            android:layout_marginLeft="60px"
+                            android:src="@drawable/mine_create_sports_page"
+                            android:layout_marginRight="10px"
+                            android:layout_height="90px" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="创建运动页"
+                            android:layout_height="wrap_content" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+                
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="12px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="150px">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_proceed"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/setting_item_selector"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        
+                        <ImageView
+                            android:layout_width="80px"
+                            android:src="@drawable/profile_proceed"
+                            android:layout_height="80px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="24px"
+                            android:text="@string/proceed"
+                            android:layout_height="wrap_content" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_settle"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/setting_item_selector"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:src="@drawable/profile_settle"
+                            android:layout_height="80px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="24px"
+                            android:text="@string/settle"
+                            android:layout_height="wrap_content" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_evaluation"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/setting_item_selector"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:src="@drawable/profile_evaluation"
+                            android:layout_height="80px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="24px"
+                            android:text="@string/evaluation"
+                            android:layout_height="wrap_content" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_profile_all_record"
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/setting_item_selector"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="80px"
+                            android:src="@drawable/profile_all_record"
+                            android:layout_height="80px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textSize="24px"
+                            android:text="@string/all_record"
+                            android:layout_height="wrap_content" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_wallet"
+                    android:layout_marginTop="12px"
+                    android:background="@drawable/setting_item_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+                    
+                    <ImageView
+                        android:id="@+id/iv_profile_wallet"
+                        android:layout_width="60px"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:src="@drawable/profile_wallet"
+                        android:layout_height="60px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="我的钱包"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_wallet"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/iv_wallet_more"
+                        android:layout_width="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:src="@drawable/mine_more"
+                        android:layout_height="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_profile_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5px"
+                        android:text="余额 1000"
+                        android:layout_toLeftOf="@id/iv_wallet_more"
+                        android:layout_height="wrap_content" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_club"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12px"
+                    android:layout_height="100px"
+                    android:background="@drawable/setting_item_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_club"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_club" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_club"
+                        android:text="我的俱乐部"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mine_more" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_authentication"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12px"
+                    android:layout_height="100px"
+                    android:background="@drawable/setting_item_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_authentication"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_authentication" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_authentication"
+                        android:text="实名认证"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_profile_authentication_status"
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mine_more" />
+
+                    <TextView
+                        android:id="@+id/tv_profile_authentication"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5px"
+                        android:text="未认证"
+                        android:layout_toLeftOf="@id/iv_profile_authentication_status"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#DBDBDB" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:background="@drawable/setting_item_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_feedback"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_feedback" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_feedback"
+                        android:text="@string/advice_feedback"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mine_more" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#DBDBDB" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:background="@drawable/setting_item_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_about"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_about" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_about"
+                        android:text="@string/about"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_authentication_more"
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mine_more" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#DBDBDB" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_profile_share"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="12px"
+                    android:layout_height="100px"
+                    android:background="@drawable/setting_item_selector"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/iv_profile_share"
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/profile_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_profile_share"
+                        android:text="分享APP"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="50px"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mine_more" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.sportspage.view.XScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_profile_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+
+            <TextView
+                android:id="@+id/tv_profile_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/setting"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="50px"
+                android:layout_alignParentRight="true"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

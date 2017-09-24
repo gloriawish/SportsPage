@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_club"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.CreateClubActivity">
+
+    <include android:id="@+id/cc_title" layout="@layout/layout_title" />
+
+    <ImageView
+        android:id="@+id/iv_badge"
+        android:layout_width="300px"
+        android:layout_below="@id/cc_title"
+        android:layout_marginTop="50px"
+        android:src="@drawable/add_badge"
+        android:layout_centerHorizontal="true"
+        android:layout_height="300px" />
+
+    <EditText
+        android:id="@+id/et_club_name"
+        android:layout_below="@id/iv_badge"
+        android:background="@color/white"
+        android:layout_marginTop="50px"
+        android:layout_width="730px"
+        android:layout_marginLeft="10px"
+        android:textSize="24px"
+        android:maxEms="10"
+        android:maxLines="1"
+        android:hint="输入俱乐部名称不超过10个字"
+        android:layout_marginRight="10px"
+        android:gravity="center"
+        android:layout_height="100px" />
+    
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_sports_type"
+        android:layout_width="730px"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="12px"
+        android:background="@color/white"
+        android:layout_below="@id/et_club_name"
+        android:layout_height="100px">
+
+        <EditText
+            android:id="@+id/et_club_sport_type"
+            android:layout_marginLeft="10px"
+            android:layout_width="730px"
+            android:gravity="center"
+            android:textSize="24px"
+            android:hint="选择运动类型"
+            android:background="@null"
+            android:layout_height="100px" />
+        
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:src="@drawable/create_club_more"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="26px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    
+    <Button
+        android:id="@+id/btn_create_club_next"
+        android:layout_width="626px"
+        android:layout_marginLeft="62px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100px"
+        android:textColor="@color/white"
+        android:text="@string/next_step"
+        android:background="@drawable/btn_bg_blue"
+        android:layout_height="100px" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

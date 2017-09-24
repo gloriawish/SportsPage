@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/layout_title" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_auth_front"
+                android:layout_width="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="fitCenter"
+                android:background="#AAAAAA"
+                android:layout_height="@dimen/auth_img_height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="身份证正面"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_auth_back"
+                android:layout_width="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="fitCenter"
+                android:background="#AAAAAA"
+                android:layout_height="@dimen/auth_img_height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="身份证反面"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/iv_auth_handle"
+                android:layout_width="match_parent"
+                android:src="@drawable/placeholder"
+                android:scaleType="fitCenter"
+                android:background="#AAAAAA"
+                android:layout_height="@dimen/auth_img_height" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:text="手持身份证照"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

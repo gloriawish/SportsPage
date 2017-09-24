@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_re_charge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context="com.sportspage.activity.ReChargeActivity">
+
+    <include
+        android:id="@+id/inclue_title"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_recharge_way"
+        android:layout_width="match_parent"
+        android:layout_below="@id/inclue_title"
+        android:layout_height="@dimen/other_item_height"
+        android:background="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/recharge_way"/>
+
+        <TextView
+            android:id="@+id/tv_recharge_pay"
+            android:layout_width="wrap_content"
+            android:paddingRight="16dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="@string/weixin_pay"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_recharge"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_recharge_pay"
+            />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_recharge"
+        style="@style/bottomBtn_Style"
+        android:text="@string/recharge_at_once"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_item_height"
+        android:background="@color/white"
+        android:layout_below="@+id/rl_recharge_way"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="16dp"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/recharge_money"/>
+
+        <EditText
+            android:id="@+id/et_charge_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:imeOptions="actionDone"
+            android:textSize="14sp"
+            android:textColorHint="@color/gray"
+            android:hint="@string/please_input_money"
+
+            />
+
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

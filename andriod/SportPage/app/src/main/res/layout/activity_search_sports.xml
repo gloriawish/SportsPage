@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="25dp"
+    android:background="@color/bg_layout"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_sports_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/search_icon"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_sports_search"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_weight="0.2"
+            android:textColor="@color/btn_login_normal"
+            android:layout_gravity="center_vertical"
+            android:text="搜索"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/refresh_search"
+        android:layout_height="match_parent" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sports_search"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

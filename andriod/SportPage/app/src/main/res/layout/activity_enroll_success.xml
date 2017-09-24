@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_enroll_success"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context="com.sportspage.activity.EnrollSuccess">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/order_finished"
+        android:scaleType="fitCenter"
+        android:layout_height="350dp" />
+
+    <include android:id="@+id/layout_enroll_title"
+        layout="@layout/layout_title" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

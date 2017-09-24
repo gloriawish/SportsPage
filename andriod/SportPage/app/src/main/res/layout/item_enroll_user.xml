@@ -1,0 +1,42 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:layout_marginTop="0.5dp"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_enroll_user_img"
+        android:layout_width="40dp"
+        android:layout_marginLeft="10dp"
+        app:riv_corner_radius="20dp"
+        android:scaleType="centerCrop"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/tv_enroll_user_name"
+        android:layout_width="wrap_content"
+        android:text="@string/defualt_user"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|right"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_view_info"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
+            android:text="查看资料"
+            android:background="@drawable/btn_bg_orange"
+            android:textColor="@color/white"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+</LinearLayout>

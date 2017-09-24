@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_friendset_ramark"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="12dp"
+            android:layout_marginBottom="18dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:text="@string/setting_remark"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/other_item_image_size"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/im_more"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/other_item_image_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:text="@string/add_blacklist"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+
+            <ch.ielse.view.SwitchView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DBDBDB" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_friendset_more"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff"
+            android:paddingLeft="12dp"
+            android:layout_marginBottom="18dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:text="@string/complain"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/other_item_image_size"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/im_more"
+                android:layout_centerVertical="true"
+                android:layout_height="@dimen/other_item_image_size" />
+
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:id="@+id/btn_firendset_delete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_bg_red"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="@string/delete"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

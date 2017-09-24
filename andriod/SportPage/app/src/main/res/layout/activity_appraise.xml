@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_layout">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D5D5D5"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title" />
+
+        <ImageView
+            android:id="@+id/iv_appraise_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_appraise_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="八万人7v7"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_appraise_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="金沙江支路200号走到底"
+                android:textColor="#D5D5D5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_appraise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2017-1-8 12:02"
+                android:textColor="#D5D5D5"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_appraise_creator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="阿尔法"
+                android:textColor="#D5D5D5"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.whinc.widget.ratingbar.RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:rb_max_count="5"
+                app:rb_count="3"
+                app:rb_empty="@drawable/backgroundstar"
+                app:rb_fill="@drawable/foregroundstar"
+                app:rb_space="5dp"
+                app:rb_click_rating="true"
+                app:rb_touch_rating="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请滑动星星评分"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:focusable="true"
+            android:layout_marginTop="1dp"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_appraise_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="#FFFFFF"
+                android:gravity="top|left"
+                android:hint="写下你的评论"
+                android:padding="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</ScrollView>

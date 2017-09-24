@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sex"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.SexActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray" />
+    <TextView
+        android:id="@+id/tv_sex_man"
+        android:layout_width="match_parent"
+        android:background="@drawable/setting_item_selector"
+        android:text="男"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_sex_woman"
+        android:layout_width="match_parent"
+        android:background="@drawable/setting_item_selector"
+        android:text="女"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_height="wrap_content" />
+    <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray" />
+
+</com.zhy.autolayout.AutoLinearLayout>

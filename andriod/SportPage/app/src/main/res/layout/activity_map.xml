@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/et_map_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/search_icon"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_map_search"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_weight="0.2"
+            android:textColor="@color/btn_login_normal"
+            android:layout_gravity="center_vertical"
+            android:text="搜索"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+        </com.baidu.mapapi.map.MapView>
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:id="@+id/iv_marker"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/mapr_location"
+            android:layout_centerVertical="true"
+            android:contentDescription="1"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_map"
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+    </ListView>
+
+</com.zhy.autolayout.AutoLinearLayout>

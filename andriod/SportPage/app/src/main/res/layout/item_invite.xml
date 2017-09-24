@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_selector"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="150px"
+            android:layout_height="140px">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_invite_icon"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher"
+                app:riv_corner_radius="5px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="450px"
+            android:layout_height="140px"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_invite_clubname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:text="俱乐部名称"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/tv_invite_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="邀请你加入俱乐部"
+                android:textColor="@color/gray"
+                android:textSize="26px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="150px"
+            android:layout_height="140px"
+            android:layout_marginRight="10px">
+
+            <TextView
+                android:id="@+id/tv_invite_agreed"
+                android:layout_width="120px"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="已接受"
+                android:textSize="30px"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_invite_agree"
+                android:layout_width="120px"
+                android:layout_height="60px"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_bg_blue"
+                android:text="同意"
+                android:textSize="30px"
+                android:textColor="@color/white" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider" />
+
+</com.zhy.autolayout.AutoLinearLayout>

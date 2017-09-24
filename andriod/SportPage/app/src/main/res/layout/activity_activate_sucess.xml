@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_activate_sucess"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/sports_create_finished"
+        android:scaleType="fitCenter"
+        android:layout_height="350dp" />
+
+    <include android:id="@+id/layout_activate_title"
+        layout="@layout/layout_title" />
+
+    <Button
+        android:id="@+id/btn_activate_detail"
+        android:text="@string/comfirm"
+        style="@style/bottomBtn_Style" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/sports_create_step3"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="10dp" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sports_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.SportsDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_sports_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_sports_detail_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sports_share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/blue2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_sports_detail_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sports_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textColor="@color/blue2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sports_detail_order"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/blue2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sports_signup" />
+
+            <TextView
+                android:id="@+id/tv_sports_detail_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="报名"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.sportspage.view.XScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_sports_detail_bottom">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_sport_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_sport_detail_title"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_sports_detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_sport_detail_title"
+                    android:background="@color/white"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="@dimen/sports_detail_padding"
+                    android:paddingTop="5dp"
+                    android:text="篮球3V3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sports_detail_star"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/tv_sports_detail_title"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/iv_sports_detail_star"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/sports_detail_padding"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/star_3_5" />
+
+                    <Button
+                        android:id="@+id/btn_sports_detail_focus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/sports_detail_padding"
+                        android:background="@drawable/btn_bg_blue"
+                        android:text="@string/add_focus"
+                        android:textColor="@color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_table"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/rl_sports_detail_star"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_table_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="星期日\n12月18日"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tv_table_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="20:00\n至22:00"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tv_table_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="50.00元/人\n线上支付"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tv_table_enroll"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="足球\n报名中"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/ll_sports_detail_table"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_location_describe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:paddingTop="5dp"
+                            android:text="地址描述:上海体育场(东北门)(15.0km)"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_location_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_location_describe"
+                            android:paddingLeft="10dp"
+                            android:text="地址还未填写"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sports_detail_map"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/sports_loaction" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/first_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@id/ll_sports_detail_location"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_creator"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/first_line"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:text="发起者"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_location_creator"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="Tenma"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sports_detail_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/sports_telephone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/second_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@id/ll_sports_detail_creator"
+                    android:background="@color/gray" />
+
+                <!--参与人-->
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_enrollor"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/second_line"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_sports_detail_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:text="已报名（0/25）"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_location_enrollor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="还没有人参与其中,赶快来报名吧"
+                            android:textColor="@color/black"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_sports_detail_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/rv_sports_detail_enrollor1"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                app:riv_corner_radius="20dp" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/rv_sports_detail_enrollor2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                app:riv_corner_radius="20dp" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/rv_sports_detail_enrollor3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                app:riv_corner_radius="20dp" />
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/rv_sports_detail_enrollor4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:scaleType="centerCrop"
+                                app:riv_corner_radius="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sports_detail_more"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/sports_more" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--运动项目-->
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/second_line"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:text="运动项目"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sports_detail_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="足球"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_sports_detail_itemImg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_sports_detail_itemImg"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/mine_focus_record_football" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/three_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_below="@id/ll_sports_detail_location"
+                    android:background="@color/gray" />
+
+                <!--底层-->
+                <LinearLayout
+                    android:id="@+id/ll_sports_detail_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.flyco.tablayout.SlidingTabLayout
+                        android:id="@+id/stL_sports_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@color/white"
+                        app:tl_divider_color="#1AFFFFFF"
+                        app:tl_divider_padding="13dp"
+                        app:tl_divider_width="1dp"
+                        app:tl_indicator_color="@color/blue2"
+                        app:tl_indicator_height="2dp"
+                        app:tl_indicator_width_equal_title="true"
+                        app:tl_tab_padding="22dp"
+                        app:tl_tab_space_equal="false"
+                        app:tl_textSelectColor="@color/black"
+                        app:tl_textUnselectColor="@color/black" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_sports_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.sportspage.view.XScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_sportsdetail_title"
+        android:layout_width="match_parent"
+        android:background="@drawable/nav_shadow"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/iv_sports_detail_more"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/sports_detail_padding"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/nav_more" />
+
+            <ImageView
+                android:id="@+id/iv_sports_detail_back"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_sports_detail_active"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_active"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/blue2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sports_signup" />
+
+            <TextView
+                android:id="@+id/tv_sports_detail_active"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="马上激活"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_sports_detail_active_times"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:text="(从未激活)"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_sports_detail_message"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:background="@color/blue2"
+            android:text="留言"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

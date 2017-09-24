@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_creat_next"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.sportspage.activity.CreatNextActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_step2_addImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/big_img_height"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sports_create_addimage" />
+            <TextView
+                android:id="@+id/tv_step2_name"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="运动名称"
+                android:layout_height="@dimen/create_item_height" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+            <TextView
+                android:id="@+id/tv_step2_location"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="地址"
+                android:layout_height="@dimen/create_item_height" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+                <ImageView
+                    android:id="@+id/iv_step2_level"
+                    android:src="@drawable/sports_create_step2_lv"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/sport_level"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_create_level"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_level_simple"
+                        android:layout_width="wrap_content"
+                        android:text="简单"
+                        android:textSize="14sp"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/rb_level_normal"
+                        android:layout_width="wrap_content"
+                        android:text="一般"
+                        android:textSize="14sp"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/rb_level_hard"
+                        android:layout_width="wrap_content"
+                        android:text="困难"
+                        android:textSize="14sp"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_date"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+                <ImageView
+                    android:id="@+id/iv_step2_date"
+                    android:src="@drawable/sports_create_step2_date"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/start_date"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_step2_date"
+                    android:layout_width="match_parent"
+                    android:paddingRight="5dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="@dimen/create_item_height" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_time"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+                <ImageView
+                    android:id="@+id/iv_step2_time"
+                    android:src="@drawable/sports_create_step2_time"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/start_time"
+                    android:id="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/tv_step2_time"
+                    android:layout_width="match_parent"
+                    android:paddingRight="5dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="@dimen/create_item_height" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_person"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+
+                <ImageView
+                    android:id="@+id/iv_step2_person"
+                    android:src="@drawable/sports_create_step2_person"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/person_num"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_step2_person"
+                    android:layout_width="match_parent"
+                    android:paddingRight="5dp"
+                    android:gravity="right|center_vertical"
+                    android:layout_height="@dimen/create_item_height" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_charge"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+
+                <ImageView
+                    android:id="@+id/iv_step2_charge"
+                    android:src="@drawable/sports_create_step2_charge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/sport_charge"
+                    />
+
+                <EditText
+                    android:id="@+id/et_step2_money"
+                    android:layout_width="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textSize="@dimen/create_text_size"
+                    android:paddingRight="5dp"
+                    android:layout_height="@dimen/create_item_height" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_way"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+                <ImageView
+                    android:id="@+id/iv_step2_way"
+                    android:src="@drawable/sports_create_step2_charge"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/pay_way"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/rg_step2_pay"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_pay_online"
+                        android:layout_width="wrap_content"
+                        android:text="@string/online"
+                        android:textSize="14sp"
+                        android:layout_height="match_parent" />
+                    <RadioButton
+                        android:id="@+id/rb_pay_offline"
+                        android:layout_width="wrap_content"
+                        android:text="@string/offline"
+                        android:textSize="14sp"
+                        android:layout_height="match_parent" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_create_private"
+                android:layout_width="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_height="@dimen/create_item_height">
+                <ImageView
+                    android:id="@+id/iv_step2_private"
+                    android:src="@drawable/sports_create_step2_privacy_blue"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/create_item_img_size"
+                    android:layout_height="@dimen/create_item_img_size" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:text="@string/is_private"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+
+                    <ch.ielse.view.SwitchView
+                        android:id="@+id/sv_step2_private"
+                        android:layout_width="wrap_content"
+                        app:primaryColor="@color/switch_color"
+                        app:primaryColorDark="@color/switch_color"
+                        app:isOpened="true"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/btn_step2_complete"
+                android:text="@string/complete"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/other_item_height"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_blue"
+                android:layout_marginRight="32dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/sports_create_step2"
+                android:layout_alignParentBottom="true"
+                android:scaleType="centerInside"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/nav_shadow"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+            <TextView
+                android:id="@+id/tv_create_step2_skip"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="跳过此步骤"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/sports_detail_padding"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/iv_create_step2_back"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nav_back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

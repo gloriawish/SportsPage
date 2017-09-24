@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="et_padding">10dp</dimen>
+    <dimen name="et_text_size">15sp</dimen>
+    <dimen name="contact_item_margin_left">13dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="other_item_image_size">30dp</dimen>
+    <dimen name="sports_type_image_size">15dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="other_item_height">40dp</dimen>
+    <dimen name="nav_title_bar_height">48dp</dimen>
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+    <dimen name="touch_raise">8dp</dimen>
+    <dimen name="corner_radius">5dp</dimen>
+    <dimen name="cash_layout_height">25dp</dimen>
+    <dimen name="profile_item_height">40dp</dimen>
+    <dimen name="profile_list_height">70dp</dimen>
+    <dimen name="profile_img_size">35dp</dimen>
+    <dimen name="change_edittext_margin">10dp</dimen>
+    <dimen name="tv_change_width">80dp</dimen>
+    <dimen name="sports_detail_padding">10dp</dimen>
+    <dimen name="create_item_height">40dp</dimen>
+    <dimen name="create_item_img_size">15dp</dimen>
+    <dimen name="create_text_size">14sp</dimen>
+    <dimen name="item_sportpage_height">28dp</dimen>
+    <dimen name="item_focus_img_size">15dp</dimen>
+    <dimen name="auth_img_height">180dp</dimen>
+    <dimen name="title_status_bar_height">73dp</dimen>
+    <dimen name="status_bar">25dp</dimen>
+    <dimen name="big_img_height">205dp</dimen>
+    <dimen name="nav_margin_top">32dp</dimen>
+    <dimen name="title_pading_top">25dp</dimen>
+</resources>

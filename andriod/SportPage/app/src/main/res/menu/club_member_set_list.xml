@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_admin"
+        android:title="增加管理员" />
+    <item
+        android:id="@+id/remove_admin"
+        android:title="删除管理员" />
+    <item
+        android:id="@+id/add_member"
+        android:title="增加成员" />
+    <item
+        android:id="@+id/remove_member"
+        android:title="删除成员" />
+    <item
+        android:id="@+id/cancel"
+        android:title="取消" />
+</menu>

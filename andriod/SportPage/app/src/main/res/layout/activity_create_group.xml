@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"
+                android:hint="@string/please_input_group_name"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/et_group_intro"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"
+                android:hint="@string/please_input_group_intro"
+                android:padding="10dp" />
+
+            <ListView
+                android:id="@+id/lv_create_group_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="0dp"
+                android:listSelector="#00000000"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_create_group"
+                style="@style/bottomBtn_Style"
+                android:text="创建群组" />
+
+            <com.sportspage.view.SideBar
+                android:id="@+id/sideBar"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

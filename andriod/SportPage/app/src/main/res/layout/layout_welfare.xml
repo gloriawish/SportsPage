@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/welfare_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:layout_marginTop="20px"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.sportspage.adapter.LoopViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="440px"
+        android:layout_marginLeft="110px"
+        android:layout_marginRight="110px"
+         />
+
+</com.zhy.autolayout.AutoLinearLayout>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.SettingActivity">
+
+    <include layout="@layout/layout_title"
+        android:id="@+id/layout_setting_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_item_height"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/layout_setting_title"
+        android:background="@drawable/setting_item_selector"
+        android:clickable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:text="@string/msg_notfication"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_msg_more"
+            android:layout_width="@dimen/sports_type_image_size"
+            android:layout_height="@dimen/sports_type_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_item_height"
+        android:background="@drawable/setting_item_selector"
+        android:layout_below="@id/rl_setting_msg"
+        android:clickable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:text="@string/change_password"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_change_more"
+            android:layout_width="@dimen/sports_type_image_size"
+            android:layout_height="@dimen/sports_type_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_item_height"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/rl_setting_change"
+        android:background="@drawable/setting_item_selector"
+        android:clickable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:text="清理缓存"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_cache_more"
+            android:layout_width="@dimen/sports_type_image_size"
+            android:layout_height="@dimen/sports_type_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/rl_setting_cache"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btn_setting_logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_item_height"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_bg_blue"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

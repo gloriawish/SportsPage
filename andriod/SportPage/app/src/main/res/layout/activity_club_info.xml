@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_club_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.ClubInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_club_info_cover"
+                android:layout_width="match_parent"
+                android:layout_height="750px"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_test"
+                app:layout_auto_baseheight="width"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="750px">
+                <Button
+                    android:id="@+id/btn_club_info_cover"
+                    android:layout_width="240px"
+                    android:text="点击更换封面图片"
+                    android:textSize="24px"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_bg_transparent_gray"
+                    android:layout_height="80px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_club_info_badge"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@id/iv_club_info_cover"
+                android:layout_height="100px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="队徽"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_height="wrap_content" />
+                
+                <ImageView
+                    android:id="@+id/iv_club_info_badge_more"
+                    android:layout_width="30px"
+                    android:layout_marginRight="14px"
+                    android:src="@drawable/mine_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30px" />
+                
+                <ImageView
+                    android:id="@+id/iv_club_info_badge"
+                    android:layout_width="70px"
+                    android:layout_marginRight="16px"
+                    android:src="@drawable/bg_test"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_club_info_badge_more"
+                    android:layout_height="70px" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_club_info_name"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@id/rl_club_info_badge"
+                android:layout_height="100px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="俱乐部名称"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_club_info_name_more"
+                    android:layout_width="30px"
+                    android:layout_marginRight="14px"
+                    android:src="@drawable/mine_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30px" />
+
+                <TextView
+                    android:id="@+id/tv_club_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="16px"
+                    android:layout_centerVertical="true"
+                    android:text="名称名称名称"
+                    android:textColor="@color/gray"
+                    android:layout_toLeftOf="@id/iv_club_info_name_more"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_club_info_type"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@id/rl_club_info_name"
+                android:layout_height="100px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="运动类型"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/iv_club_info_type_more"
+                    android:layout_width="30px"
+                    android:layout_marginRight="14px"
+                    android:src="@drawable/mine_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30px" />
+
+                <TextView
+                    android:id="@+id/tv_club_info_type"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="16px"
+                    android:layout_centerVertical="true"
+                    android:text="类型"
+                    android:textColor="@color/gray"
+                    android:layout_toLeftOf="@id/iv_club_info_type_more"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_club_info_notice"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_below="@id/rl_club_info_type"
+                android:minHeight="100px"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width=  "wrap_content"
+                    android:text="公告"
+                    android:layout_marginLeft="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_marginRight="14px"
+                    android:src="@drawable/mine_more"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="30px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_club_info_notice"
+                android:layout_width="match_parent"
+                android:text="\u3000\u3000公告公告……"
+                android:padding="10px"
+                android:background="@color/white"
+                android:layout_below="@id/rl_club_info_notice"
+                android:textSize="24px"
+                android:textColor="@color/gray"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav_shadow">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/iv_club_info_back"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

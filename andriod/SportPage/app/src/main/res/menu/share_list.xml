@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/friend"
+        android:icon="@drawable/sports_main_share_wechatfriends"
+        android:title="微信好友" />
+    <item
+        android:id="@+id/dicover"
+        android:icon="@drawable/sports_main_share_wechat"
+        android:title="朋友圈" />
+    <item
+        android:id="@+id/sportspage"
+        android:icon="@drawable/sports_main_share_sportspage"
+        android:title="运动页" />
+    <item
+        android:id="@+id/qq"
+        android:icon="@drawable/sports_main_share_qq"
+        android:title="QQ" />
+    <item
+        android:id="@+id/qzone"
+        android:icon="@drawable/sports_main_share_qzone"
+        android:title="QQ空间" />
+</menu>

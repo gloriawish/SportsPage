@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.ChangeSportsPageActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_change_sportspage_cover"
+        android:layout_width="match_parent"
+        android:layout_height="420px">
+
+        <ImageView
+            android:id="@+id/iv_change_sportspage_cover"
+            android:layout_width="match_parent"
+            android:src="@drawable/bg_test"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_change_sportspage_cover"
+            android:layout_width="250px"
+            android:text="点击更换封面图片"
+            android:textSize="28px"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg_transparent_gray"
+            android:layout_height="80px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_change_sportspage_name"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/rl_change_sportspage_cover"
+        android:layout_height="100px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="运动页名称"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:textSize="30px"
+            android:textColor="#333333"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_club_info_name_more"
+            android:layout_width="30px"
+            android:layout_marginRight="14px"
+            android:src="@drawable/mine_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="30px" />
+
+        <TextView
+            android:id="@+id/tv_change_sportspage_name"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16px"
+            android:layout_centerVertical="true"
+            android:text="名称名称名称"
+            android:textColor="#999999"
+            android:textSize="24px"
+            android:layout_toLeftOf="@id/iv_club_info_name_more"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_change_sportspage_desc"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:minHeight="100px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_change_sportspage_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width=  "wrap_content"
+            android:text="详情描述"
+            android:layout_marginLeft="30px"
+            android:textColor="#333333"
+            android:textSize="30px"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_marginRight="14px"
+            android:src="@drawable/mine_more"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_change_sportspage_desc"
+        android:layout_width="match_parent"
+        android:layout_below="@id/rl_change_sportspage_desc"
+        android:text="详情详情详情"
+        android:padding="30px"
+        android:background="@color/white"
+        android:textSize="24px"
+        android:textColor="#999999"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_change_sportspage_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/iv_change_sportspage_back"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_back" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

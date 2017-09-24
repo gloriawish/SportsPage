@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="2dp"
+            android:layout_marginLeft="75px"
+            android:layout_height="70px"
+            android:background="@color/bg_layout" />
+
+        <ImageView
+            android:id="@+id/iv_club_trend_img"
+            android:layout_width="70px"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="40px"
+            android:layout_height="70px" />
+        <View
+            android:id="@+id/v_club_trend_line"
+            android:layout_width="2dp"
+            android:layout_marginLeft="75px"
+            android:layout_height="match_parent"
+            android:background="@color/bg_layout" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_club_trend_txt"
+            android:layout_width="590px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_corners_layout"
+            android:layout_marginRight="30px"
+            android:textSize="24px"
+            android:layout_marginTop="80px"
+            android:layout_marginBottom="20px"
+            android:padding="10px"
+            android:text="新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新新"
+            />
+
+        <TextView
+            android:id="@+id/tv_club_trend_date"
+            android:layout_width="wrap_content"
+            android:textSize="24px"
+            android:text="01/03"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="10px"
+            android:layout_alignLeft="@id/tv_club_trend_txt"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_club_trend_time"
+            android:layout_width="wrap_content"
+            android:textSize="24px"
+            android:text="15:20"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="20px"
+            android:layout_alignRight="@id/tv_club_trend_txt"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

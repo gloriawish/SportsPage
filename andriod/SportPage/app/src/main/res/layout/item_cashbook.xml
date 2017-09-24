@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="1dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/cash_layout_height">
+        <TextView
+            android:id="@+id/tv_cashbook_type"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="支付"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_cashbook_time"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2016-11-25"
+            android:textColor="@color/font_color"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_height="@dimen/cash_layout_height">
+        <TextView
+            android:id="@+id/tv_cashbook_yu"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/yu"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_cashbook_balance"
+            android:layout_width="wrap_content"
+            android:text="100.00"
+            android:layout_toRightOf="@id/tv_cashbook_yu"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_cashbook_money"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="-50"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_club_cover"
+    android:layout_width="match_parent"
+    android:background="@color/bg_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.ClubCoverActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <ImageView
+        android:id="@+id/iv_club_cover"
+        android:layout_marginTop="12px"
+        android:src="@drawable/club_cover"
+        android:layout_width="match_parent"
+        android:layout_height="750px"
+        android:scaleType="centerCrop"
+        app:layout_auto_baseheight="width"  />
+    
+    <Button
+        android:id="@+id/btn_club_cover_next"
+        android:layout_width="626px"
+        android:background="@drawable/btn_bg_blue"
+        android:textColor="@color/white"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="244px"
+        android:text="完成创建"
+        android:layout_height="100px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

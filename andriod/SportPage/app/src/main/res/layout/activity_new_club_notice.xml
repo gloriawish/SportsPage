@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_club_notice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.NewClubNoticeActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <EditText
+        android:id="@+id/et_new_club_notice"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="12px"
+        android:hint="发布俱乐部第一条公告"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:padding="20px"
+        android:layout_width="match_parent"
+        android:layout_height="150px" />
+    
+    <Button
+        android:id="@+id/btn_commit_request"
+        android:layout_width="626px"
+        android:layout_marginLeft="62px"
+        android:layout_marginRight="62px"
+        android:layout_marginTop="842px"
+        android:background="@drawable/btn_bg_blue"
+        android:textColor="@color/white"
+        android:text="提交申请"
+        android:layout_height="100px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

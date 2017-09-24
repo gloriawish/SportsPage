@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.AddFriendActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <EditText
+        android:id="@+id/et_addfriend_friendid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:hint="@string/please_input_userId"/>
+
+    <Button
+        android:id="@+id/btn_addfriend_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:textColor="@color/white"
+        android:text="@string/add"
+        android:background="@drawable/btn_bg_blue"
+        />
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

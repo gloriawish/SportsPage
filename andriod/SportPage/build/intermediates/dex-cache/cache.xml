@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/pinyin4j-2.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/pinyin4j-2.5.0_f21385af2bfef0b2974a7474cfd06d70952bfd4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_base_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00cd7d6a741c6a922c9cf7b0db52a357ebf12cdb">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_base_v4_1_1_1e8b9fe92b9663dd36d2692ded2d3966056c2423/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/open_sdk_r5781.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cbac7d081542657d885efd7a529a9267d22ec080">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/open_sdk_r5781_49925ffabe84835d38eac45a368173cccd69bd97/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/IMLib/build/intermediates/bundles/default/libs/Rong_IMLib.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b7f0293b75ab626a90bf172a9b630e654794f48a">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/8/Rong_IMLib_35b7d284e504608e69086d0ef9f8d85b04b570e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/AMap_Search_V3.4.0_20160811.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="298b0f77ab9b3d6aebae2eef0805e322a947fb4e">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_Search_V3.4.0_20160811_846c238184add81d671de25091240773a957cc5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_util_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5630c44b212b90ad64c2bc2a994cbf28d1b08a7">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_util_v4_1_1_5fa46cea7998f55ebbe2879d017e9804e6d62701/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/mta-sdk-1.6.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c184c69f43b1fe46390f7123717c65bd844bccb6">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/mta-sdk-1.6.2_2fb6e14a242dd13305ab96ccf6a9d54a9337ce3b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_search_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b73dac26619f94061d28c54a7982ae8e0e783903">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_search_v4_1_1_6e2095b6118765605fb484cbb34c08a4061394d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3b3efe87146ffdf7606a8a6002f1f35abbd0319c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_radar_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec3b3b79fdcc8fe059676554e31053027043edf8">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_radar_v4_1_1_fcdff3ba7b9281e0ecde3c1ac7c4c3f494e3bdc1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_cloud_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="93ef91d018051b8b5e001eb5e106b983fee8a549">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_cloud_v4_1_1_e22421406add832fa8215f8ef595c4d1c1d6b3dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/AMap_Channel_Location_V1.4.0_20160708.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c3b0d351856069810b0c376684e946b72e897e2d">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_Channel_Location_V1.4.0_20160708_b82982fb9be4f7fbe4a9906794ddb05c384a3ec5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/AMap_2DMap_V2.9.0_20160525.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="46212fcb15e2fcfcef796ab9f7af3fd1364f98f4">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/AMap_2DMap_V2.9.0_20160525_704c1342f0d03a8e6e839f58fe2b92776abb14ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="153a7b7ac04439535acbf9c34cd7b64825c7c985">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5d420ae4bc2527e424ed60fc42e7ed070295a033/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/baidumapapi_map_v4_1_1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="930064f0a91ff20ceb8dd4504b7dadec5aabea82">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/baidumapapi_map_v4_1_1_e54d482589e1d41a0ea09bd74d4b810ca9eb6c6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/app/libs/locSDK_6.13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2cdb37444b41b42e1ce5a8a27e5d3c22e1c57479">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/2/locSDK_6.13_72c7b0f36782659ea27a91d340dc9f95d9eff678/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zz/Desktop/运动页/SportPage/IMKit/build/intermediates/bundles/default/libs/Rong_IMKit.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c0024f53b0ba4a75b569a5c91720a920dca890c">
+        <dex dex="/Users/zz/Desktop/运动页/SportPage/app/build/intermediates/transforms/dex/debug/folders/1000/8/Rong_IMKit_e42534aa51fc18e512348db2bbd85563a42b6ad7/classes.dex" />
+    </item>
+
+</items>

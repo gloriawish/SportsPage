@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_club_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_layout"
+    tools:context="com.sportspage.activity.ClubSettingActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_club_setting_member"
+        android:layout_marginTop="12px"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/setting_item_selector"
+        android:clickable="true"
+        android:paddingLeft="40px"
+        android:paddingRight="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="俱乐部成员"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_nick_more"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_more" />
+
+        <TextView
+            android:id="@+id/tv_club_member_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_nick_more"
+            android:maxLines="1"
+            android:text="4名成员"
+            android:textSize="14sp" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_alignParentBottom="true"
+        android:background="#EFEFEF" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="150px">
+
+        <ImageView
+            android:layout_width="64px"
+            android:layout_marginLeft="30px"
+            android:src="@drawable/icon_club_member"
+            android:layout_gravity="center_vertical"
+            android:layout_height="64px" />
+        
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_club_setting_member"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_gravity="center_vertical"
+            android:layout_height="110px">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/iv_club_add_member"
+            android:layout_width="108px"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/add_member"
+            android:layout_height="108px" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="12px"
+        android:id="@+id/ll_club_update"
+        android:layout_width="match_parent"
+        android:background="@drawable/setting_item_selector"
+        android:layout_height="100px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="资料修改"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_alignParentBottom="true"
+        android:background="#EFEFEF" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_club_join_way"
+        android:layout_width="match_parent"
+        android:background="@drawable/setting_item_selector"
+        android:layout_height="100px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="加入俱乐部方式"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:layout_height="wrap_content" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wallet_set"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_layout"
+    android:layout_height="match_parent"
+    tools:context="com.sportspage.activity.WalletSetActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wallet_set_pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_item_height"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/layout_setting_title"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:text="修改支付密码"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_msg_more"
+            android:layout_width="@dimen/sports_type_image_size"
+            android:layout_height="@dimen/sports_type_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mine_more" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#DBDBDB" />
+    </RelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

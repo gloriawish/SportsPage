@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_club_notice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.PublishClubNoticeActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <EditText
+        android:id="@+id/et_publish_club_notice"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="12px"
+        android:hint="请输入俱乐部公告"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:padding="20px"
+        android:layout_width="match_parent"
+        android:layout_height="150px" />
+
+</com.zhy.autolayout.AutoLinearLayout>

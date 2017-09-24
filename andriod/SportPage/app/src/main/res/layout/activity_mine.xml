@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.MineActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_title" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/riv_mine_portrait"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/click_change_head"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_username"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_username" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_username"
+                    android:text="@string/username"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_username_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_mine_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_username_more"
+                    android:maxLines="1"
+                    android:text="Fyksdjfkl"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_nick"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_nick"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_nick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_nick"
+                    android:text="@string/nick"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_nick_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more" />
+
+                <TextView
+                    android:id="@+id/tv_mine_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_nick_more"
+                    android:maxLines="1"
+                    android:text="Tenma"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_sex"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_sex" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_sex"
+                    android:text="@string/sex"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_sex_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more" />
+
+                <TextView
+                    android:id="@+id/tv_mine_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_sex_more"
+                    android:maxLines="1"
+                    android:text="男"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_phone"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_mobile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_phone"
+                    android:text="@string/phone"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_phone_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tv_mine_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_phone_more"
+                    android:maxLines="1"
+                    android:text="已绑定"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_wechat"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_wechat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_wechat"
+                    android:text="@string/wechat"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_wechat_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:visibility="invisible"
+                    android:src="@drawable/mine_more" />
+
+                <TextView
+                    android:id="@+id/tv_mine_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_wechat_more"
+                    android:maxLines="1"
+                    android:text="未安装微信"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_mail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_mail"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_mail"
+                    android:text="@string/mail"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_mail_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more" />
+
+                <TextView
+                    android:id="@+id/tv_mine_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_mail_more"
+                    android:maxLines="1"
+                    android:text="1014203967@qq.com"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_selector"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <ImageView
+                    android:id="@+id/iv_mine_address"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/mine_personal_address" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_mine_address"
+                    android:text="@string/address"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_address_more"
+                    android:layout_width="@dimen/sports_type_image_size"
+                    android:layout_height="@dimen/sports_type_image_size"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mine_more" />
+
+                <TextView
+                    android:id="@+id/tv_mine_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_address_more"
+                    android:maxLines="1"
+                    android:text="上海 浦东"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#DBDBDB" />
+            </RelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

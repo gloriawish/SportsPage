@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/splash_item" />
+
+    <Button
+        android:id="@+id/btn_splash_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/other_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="startMain"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/btn_bg_white"
+        android:text="开 始"
+        android:textSize="14sp" />
+
+</RelativeLayout>

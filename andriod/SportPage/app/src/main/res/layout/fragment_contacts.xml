@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include android:id="@+id/layout_title" layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/windows_color">
+
+            <LinearLayout
+                android:id="@+id/ll_contacts_group"
+                style="@style/MMListItem"
+                android:clickable="true"
+                android:layout_height="55dp"
+                android:background="@drawable/setting_item_selector"
+                android:paddingLeft="15dip">
+                <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:src="@drawable/icon_group" />
+                <TextView
+                    style="@style/MMFontTitleInList"
+                    android:textColor="@color/black"
+                    android:text="@string/my_group"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:dividerHeight="0dp"
+                android:divider="#00000000"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000" />
+
+        </LinearLayout>
+
+        <com.sportspage.view.SideBar
+            android:id="@+id/sideBar"
+            android:layout_height="match_parent"
+            android:layout_width="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

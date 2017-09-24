@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_club_list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40px"
+        android:textSize="24px"
+        android:textColor="@color/gray"
+        android:visibility="gone" />
+
+</com.zhy.autolayout.AutoLinearLayout>

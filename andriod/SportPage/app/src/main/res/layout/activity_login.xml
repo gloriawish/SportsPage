@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:context="com.sportspage.activity.LoginActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="392px"
+            android:layout_marginTop="322px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/sportspage2x"
+            android:layout_height="70px"/>
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="626px"
+            android:layout_height="82px"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="62px"
+            android:layout_marginTop="20px"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/phone_num"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:textSize="26px"
+            android:maxLength="11"
+            android:paddingRight="20px"
+            android:paddingLeft="20px"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="626px"
+            android:layout_height="82px"
+            android:layout_marginLeft="62px"
+            android:layout_marginRight="62px"
+            android:layout_marginTop="20px"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:maxLength="20"
+            android:textSize="26px"
+            android:paddingRight="20px"
+            android:paddingLeft="20px"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="626px"
+            android:layout_height="82px"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20px"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_login_btn"
+            android:textSize="26px"
+            android:text="@string/login"
+            />
+
+        <TextView
+            android:id="@+id/tv_login_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_and_reset_pwd"
+            android:layout_marginTop="40px"
+            android:textSize="24px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="160px"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="62px"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22px"
+            android:text="@string/or"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="62px"
+            android:layout_weight="0.4"
+            android:background="@color/white"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_marginTop="50px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_wechat_login"
+                android:layout_marginLeft="164px"
+                android:src="@drawable/icon_wechat"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                />
+
+            <ImageView
+                android:id="@+id/iv_qq_login"
+                android:layout_marginLeft="222px"
+                android:layout_width="100px"
+                android:src="@drawable/icon_qq"
+                android:layout_height="100px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_agree_protocol"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24px"
+            android:layout_marginBottom="20px"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:background="@color/trans_white"
+            android:textColor="@color/white"
+            android:text="@string/no_userid_reg"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sportspage">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- iBeancon功能所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="HFqoF6RlNwHo7z3m" />
+        <meta-data
+            android:name="InstallChannel"
+            android:value="play" />
+
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash_Theme">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <activity
+            android:name=".activity.WeChatLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <!-- 微信登录+分享start -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <!-- 微信微信登录+分享end -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <activity
+            android:name=".activity.ResetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Main" />
+        <!-- 融云聊天start -->
+        <activity
+            android:name=".activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.sportspage"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 聚合会话列表 -->
+        <activity
+            android:name=".activity.SubConversationListActivtiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.sportspage"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receiver.RongNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 此部分代码需要移植到您的 app 下的 manifest，并且 authorities 指定您的包名。例如：com.android.FileProvider -->
+        <!-- 否则使用拍照功能时，会崩溃 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sportspage.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+        <!-- 融云聊天end -->
+        <activity
+            android:name=".activity.UserDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.FirendSettingAvtivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.AddFriendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.WalletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ReChargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.WithDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SportsDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name=".activity.CashbookActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SetNoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.EnrollSuccess"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.CreateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.CreatNextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PerfectinformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.PhotoClipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SportsRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+
+        <!-- 百度地图start -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="gDeknSFS3VDjjyNGd6P5DTCSMkAVlmef" />
+        <!-- 百度地图end -->
+
+        <activity android:name=".activity.LocationActivity" />
+        <activity
+            android:name=".activity.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ActivateSucessActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.PayPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SportPageRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.FocusRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.EnrollUserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.FriendDeatilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.CreateGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SettleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+
+        <!-- ping++start -->
+        <activity
+            android:name="com.pingplusplus.android.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微信支付 -->
+        <activity-alias
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity="com.pingplusplus.android.PaymentActivity" />
+        <!-- ping++end -->
+
+        <activity
+            android:name=".activity.GroupListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.MineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.NickActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.SexActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.MailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.AuthenticationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.MainNoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.AppraiseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ProtocolActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+
+        <service android:name=".service.SPPushIntentService" />
+        <service
+            android:name=".service.SPPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+
+        <activity
+            android:name=".activity.SearchSportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.WalletSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ClubActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.CreateClubActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ClubCoverActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.MySportsPageActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ClubInfoActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.NewClubNoticeActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105901492" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.ClubSettingActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.JoinClubSettingActivity"
+            android:theme="@style/Theme.Swipe.Back">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.MyClubActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ClubMemberActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ManagerClubMemberActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.UpdateClubNameActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ClubSportspageActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.UpdateClubSportItemActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.PublishClubNoticeActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.BindSportsPageActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.InviteListActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ApplyListActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+        <activity
+            android:name=".activity.ChangeSportsPageActivity"
+            android:theme="@style/Theme.Swipe.Back" />
+    </application>
+
+</manifest>

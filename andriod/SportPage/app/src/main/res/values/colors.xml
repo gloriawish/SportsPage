@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<!-- 白色 -->
+	<color name="white">#ffffffff</color>
+    <!--窗体颜色 -->
+	<color name="windows_color">#F5F5F5</color>
+    <color name="bar_color">#485159</color>
+    <color name="status_color">#2B3135</color>
+    <color name="trans">#00FFFFFF</color>
+
+    <color name="bg_layout">#ebebeb</color>
+    <color name="font_color">#B4B4B4</color>
+
+    <color name="switch_color">#0E88ED</color>
+    <color name="blue2">#1A9AFB</color>
+
+    <color name="black">#ff000000</color>
+    <color name="black1">#7A7E83</color>
+    <color name="black2">#ffeeeeee</color>
+    <color name="gray">#ACACAC</color>
+    <color name="trans_gray">#8F3C463D</color>
+    <color name="trans_white">#3FFFFFFF</color>
+    <color name="bg_login">#374654</color>
+    <color name="btn_login_normal">#00aaff</color>
+    <color name="btn_send_msg">#0E88EB</color>
+    <color name="btn_bg_gray">#808080</color>
+    <color name="red">#ff0000</color>
+    <color name="bg_wallet">#48515A</color>
+    <color name="text_color_orange">#FE8E1D</color>
+    <color name="text_color_gray">#B8B7BD</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="primary_light">#C8E6C9</color>
+    <color name="colorAccent">#8BC34A</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="star_light">#F9BB12</color>
+    <color name="star_dark">#D9BB12</color>
+
+    <color name="background">#eee</color>
+
+</resources>

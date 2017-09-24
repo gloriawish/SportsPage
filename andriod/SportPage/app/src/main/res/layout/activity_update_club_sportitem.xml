@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_marginTop="12px"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_update_club_sportitem"
+            android:layout_width="match_parent"
+            android:paddingLeft="20px"
+            android:layout_height="100px"
+            android:background="@null"
+            android:hint="选择运动类型"
+            android:textSize="@dimen/create_text_size" />
+
+        <ImageView
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26px"
+            android:src="@drawable/create_club_more" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

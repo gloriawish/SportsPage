@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.sportspage.activity.CreateActivity">
+
+    <ImageView
+        android:id="@+id/iv_create_addImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/big_img_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sports_create_addimage" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/sports_create_step1"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="10dp"
+        android:layout_height="10dp" />
+    
+    <Button
+        android:id="@+id/btn_step1_next"
+        android:text="@string/next_step"
+        style="@style/bottomBtn_Style" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@+id/iv_create_addImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/rl_create_name"
+            android:layout_below="@id/iv_create_addImage"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_height="@dimen/create_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/create_item_img_size"
+                android:src="@drawable/sports_create_name"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <EditText
+                android:id="@+id/et_create_name"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:inputType="text"
+                android:maxLength="12"
+                android:hint="@string/please_name_your_sport"
+                android:textSize="@dimen/create_text_size"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/ll_create_location"
+            android:layout_below="@id/iv_create_addImage"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_height="@dimen/create_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/create_item_img_size"
+                android:src="@drawable/sports_create_location"
+                android:layout_height="@dimen/create_item_img_size"
+                android:id="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/et_create_location"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:hint="@string/set_sport_address"
+                android:textSize="@dimen/create_text_size"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/ll_create_type"
+            android:layout_below="@id/iv_create_addImage"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_height="@dimen/create_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/create_item_img_size"
+                android:src="@drawable/sports_create_event"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <EditText
+                android:id="@+id/et_create_select"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:background="@null"
+                android:hint="@string/select_sport_type"
+                android:textSize="@dimen/create_text_size"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray" />
+        <LinearLayout
+            android:id="@+id/ll_create_theme"
+            android:layout_below="@id/iv_create_addImage"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:layout_height="@dimen/create_item_height">
+
+            <ImageView
+                android:layout_width="@dimen/create_item_img_size"
+                android:src="@drawable/sports_create_summary"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:id="@+id/et_create_theme"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:text="@string/theme_describe"
+                android:textSize="@dimen/create_text_size"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_create_describe"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="left|top"
+            android:hint="@string/please_input_detail_describe"
+            android:background="@android:drawable/edit_text"
+            android:textSize="@dimen/create_text_size"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/nav_shadow"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="88px">
+
+            <ImageView
+                android:id="@+id/iv_create_back"
+                android:layout_width="100px"
+                android:layout_height="50px"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:src="@drawable/nav_back" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

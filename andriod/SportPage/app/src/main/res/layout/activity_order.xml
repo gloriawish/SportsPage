@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_order"
+    android:layout_width="match_parent"
+    android:background="@color/bg_layout"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+        <include layout="@layout/layout_title" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_order_sportName"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:text="黑马"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="@dimen/create_item_height" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+            <ImageView
+                android:src="@drawable/sports_order_date"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="@string/start_date"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_date"
+                android:layout_width="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/create_item_height" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+            <ImageView
+                android:src="@drawable/sports_order_time"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/start_time" />
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                android:layout_width="match_parent"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/create_item_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+
+            <ImageView
+                android:src="@drawable/sports_order_location"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/tv_order_address"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:gravity="right|center_vertical"
+                android:layout_height="@dimen/create_item_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+            <ImageView
+                android:src="@drawable/sports_order_chargetype"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/pay_way"
+                 />
+
+            <TextView
+                android:id="@+id/tv_order_pay"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:gravity="right|center_vertical"
+                android:layout_height="@dimen/create_item_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+            <ImageView
+                android:src="@drawable/sports_create_step2_charge"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/money"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_money"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:gravity="right|center_vertical"
+                android:layout_height="@dimen/create_item_height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:paddingRight="5dp"
+            android:layout_height="@dimen/create_item_height">
+            <ImageView
+                android:src="@drawable/sports_order_initiate"
+                android:layout_gravity="center_vertical"
+                android:layout_width="@dimen/create_item_img_size"
+                android:layout_height="@dimen/create_item_img_size" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="@string/creator"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_creater"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:gravity="right|center_vertical"
+                android:layout_height="@dimen/create_item_height" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_order_bottom"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_height="@dimen/create_item_height">
+
+                <TextView
+                    android:id="@+id/tv_order_all"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="总金额"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_order_should_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥50.00"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/red"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_order_all"
+                    />
+
+                <Button
+                    android:id="@+id/btn_order_pay"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_bg_blue"
+                    android:text="支付订单"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_above="@id/rl_order_bottom"
+                android:layout_marginRight="5dp"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

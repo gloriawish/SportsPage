@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.sportspage.view.AutoCardView
+        android:layout_width="722px"
+        app:cardCornerRadius="2dp"
+        android:layout_marginLeft="14px"
+        android:elevation="3px"
+        android:layout_marginTop="5px"
+        android:paddingBottom="5px"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_club_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5px"
+            android:background="@drawable/bg_corners"
+            android:clickable="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_club_list_cover"
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:layout_marginLeft="20px"
+                android:layout_marginTop="20px"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="5px"
+                android:src="@drawable/bg_test" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240px"
+                android:orientation="vertical">
+                <!--50-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="20px">
+
+                    <TextView
+                        android:id="@+id/tv_club_list_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="俱乐部名称"
+                        android:textColor="@color/gray"
+                        android:textSize="34px" />
+
+                    <ImageView
+                        android:id="@+id/iv_club_list_type"
+                        android:layout_width="30px"
+                        android:layout_height="30px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="40px"
+                        android:src="@color/gray" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <!--46-->
+                <ProgressBar
+                    android:id="@+id/pb_club_list_vitality"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="464px"
+                    android:layout_height="16px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:max="100"
+                    android:progress="80"
+                    android:progressDrawable="@drawable/progress_corners"
+                    android:secondaryProgress="100" />
+                <!--34-->
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12px"
+                    android:layout_marginRight="12px"
+                    android:layout_marginTop="12px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活跃度"
+                        android:textColor="@color/black1"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_club_list_vitality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textSize="24px"
+                        android:text="0/1000"
+                        android:textColor="@color/blue2" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View
+                    android:layout_width="520px"
+                    android:layout_height="1px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="10px"
+                    android:background="@color/trans_gray" />
+                <!--50-->
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="520px"
+                    android:layout_height="50px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginBottom="5px"
+                    android:gravity="right|bottom">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_club_list_sportspage"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="30px"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/club_list_sportspage" />
+
+                        <TextView
+                            android:id="@+id/tv_club_list_sportspage_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="12"
+                            android:textColor="@color/gray"
+                            android:textSize="24px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/ll_club_list_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10px"
+                        android:layout_marginRight="40px"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:layout_width="50px"
+                            android:layout_height="50px"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/club_list_member" />
+
+                        <TextView
+                            android:id="@+id/tv_club_list_member_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:text="113"
+                            android:textColor="@color/gray"
+                            android:textSize="24px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--<View-->
+                    <!--android:layout_width="1px"-->
+                    <!--android:layout_marginTop="4px"-->
+                    <!--android:layout_marginBottom="4px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/gray" />-->
+
+
+                    <!--<View-->
+                    <!--android:layout_width="1px"-->
+                    <!--android:layout_marginTop="4px"-->
+                    <!--android:layout_marginBottom="4px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@color/gray" />-->
+
+                    <!--<com.zhy.autolayout.AutoLinearLayout-->
+                    <!--android:id="@+id/ll_club_list_share"-->
+                    <!--android:layout_width="173px"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="50px"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--android:src="@drawable/club_list_share"-->
+                    <!--android:layout_height="50px" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:textSize="24px"-->
+                    <!--android:text="分享俱乐部"-->
+                    <!--android:textColor="@color/gray"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                    <!--</com.zhy.autolayout.AutoLinearLayout>-->
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.sportspage.view.AutoCardView>
+
+</com.zhy.autolayout.AutoLinearLayout>
