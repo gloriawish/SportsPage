@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPCreateFinishViewController">
+            <connections>
+                <outlet property="finishedButton" destination="abG-6n-9qg" id="NWL-Vr-pcl"/>
+                <outlet property="imageBottomConstraint" destination="ew7-ld-VUN" id="3q2-iL-EZL"/>
+                <outlet property="turnToMainButton" destination="T4Y-zV-afe" id="xLv-vy-a0Y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_create_finished" translatesAutoresizingMaskIntoConstraints="NO" id="D2O-hg-JsM">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="D2O-hg-JsM" secondAttribute="height" multiplier="64:95" id="LgP-fM-SX9"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-D5-T6K" userLabel="NavView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-fj-bAn"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4Y-zV-afe">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="返回首页"/>
+                            <connections>
+                                <action selector="turnToMainAction" destination="-1" eventType="touchUpInside" id="4Gj-z8-yuu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="T4Y-zV-afe" firstAttribute="centerY" secondItem="9t6-D5-T6K" secondAttribute="centerY" constant="8" id="A8J-Ja-Dn7"/>
+                        <constraint firstItem="0MK-fj-bAn" firstAttribute="leading" secondItem="9t6-D5-T6K" secondAttribute="leading" id="GgO-zm-Ggq"/>
+                        <constraint firstAttribute="height" constant="64" id="Wol-fJ-IMx"/>
+                        <constraint firstAttribute="trailing" secondItem="0MK-fj-bAn" secondAttribute="trailing" id="X9U-hZ-Gfq"/>
+                        <constraint firstItem="0MK-fj-bAn" firstAttribute="top" secondItem="9t6-D5-T6K" secondAttribute="top" id="ZVo-DH-NmN"/>
+                        <constraint firstAttribute="bottom" secondItem="0MK-fj-bAn" secondAttribute="bottom" id="hfr-bg-S4x"/>
+                        <constraint firstAttribute="trailing" secondItem="T4Y-zV-afe" secondAttribute="trailing" constant="15" id="kd0-D7-JaT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abG-6n-9qg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="KCc-gt-H1k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="finishedButtonAction:" destination="-1" eventType="touchUpInside" id="VBJ-DQ-9si"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_create_step3" translatesAutoresizingMaskIntoConstraints="NO" id="H9X-8l-UhT">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="EcY-wN-ZBM"/>
+                        <constraint firstAttribute="height" constant="22" id="nxm-UA-LhR"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D2O-hg-JsM" secondAttribute="trailing" constant="15" id="CGH-VX-gj2"/>
+                <constraint firstItem="D2O-hg-JsM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="H7x-zO-KOg"/>
+                <constraint firstItem="H9X-8l-UhT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PL1-A3-fTy"/>
+                <constraint firstItem="H9X-8l-UhT" firstAttribute="top" secondItem="abG-6n-9qg" secondAttribute="bottom" constant="10" id="TTt-T6-eLl"/>
+                <constraint firstAttribute="bottom" secondItem="H9X-8l-UhT" secondAttribute="bottom" constant="15" id="b8m-Im-pBV"/>
+                <constraint firstItem="abG-6n-9qg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="c69-8Z-kn1"/>
+                <constraint firstItem="abG-6n-9qg" firstAttribute="top" secondItem="D2O-hg-JsM" secondAttribute="bottom" constant="667" id="ew7-ld-VUN"/>
+                <constraint firstItem="9t6-D5-T6K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mnx-xG-fKw"/>
+                <constraint firstAttribute="trailing" secondItem="9t6-D5-T6K" secondAttribute="trailing" id="qHZ-mn-Daz"/>
+                <constraint firstAttribute="trailing" secondItem="abG-6n-9qg" secondAttribute="trailing" constant="31" id="v2t-24-sbz"/>
+                <constraint firstItem="9t6-D5-T6K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xkX-Cx-0Pp"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="415.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sports_create_finished" width="320" height="475"/>
+        <image name="Sports_create_step3" width="55" height="22"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

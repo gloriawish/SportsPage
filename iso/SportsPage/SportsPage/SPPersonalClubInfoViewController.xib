@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPPersonalClubInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="t4C-RD-QEM" id="O0V-DJ-V7t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t4C-RD-QEM">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5q2-DS-x36">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="SbW-di-CFq"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogj-sY-5PD">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="MSp-0q-DJK"/>
+                                <constraint firstAttribute="width" constant="50" id="w5f-XD-lO5"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="zbr-zD-76a"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SbW-di-CFq" firstAttribute="leading" secondItem="5q2-DS-x36" secondAttribute="leading" id="4ye-WT-wK2"/>
+                        <constraint firstItem="SbW-di-CFq" firstAttribute="top" secondItem="5q2-DS-x36" secondAttribute="top" id="Akq-EL-c5k"/>
+                        <constraint firstAttribute="bottom" secondItem="SbW-di-CFq" secondAttribute="bottom" id="RTj-pW-qak"/>
+                        <constraint firstAttribute="height" constant="64" id="cQH-Zi-HP3"/>
+                        <constraint firstItem="ogj-sY-5PD" firstAttribute="centerY" secondItem="5q2-DS-x36" secondAttribute="centerY" constant="8" id="cZW-Yf-j6t"/>
+                        <constraint firstItem="ogj-sY-5PD" firstAttribute="leading" secondItem="5q2-DS-x36" secondAttribute="leading" id="gav-af-pCL"/>
+                        <constraint firstAttribute="trailing" secondItem="SbW-di-CFq" secondAttribute="trailing" id="pfP-M1-5TV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="t4C-RD-QEM" secondAttribute="bottom" id="LoK-uJ-Ba8"/>
+                <constraint firstItem="t4C-RD-QEM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QI6-U6-qQY"/>
+                <constraint firstItem="5q2-DS-x36" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RQI-Tr-x26"/>
+                <constraint firstItem="t4C-RD-QEM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="V1U-QG-YCT"/>
+                <constraint firstAttribute="trailing" secondItem="t4C-RD-QEM" secondAttribute="trailing" id="bz4-2r-KaM"/>
+                <constraint firstAttribute="trailing" secondItem="5q2-DS-x36" secondAttribute="trailing" id="uXL-wH-dEy"/>
+                <constraint firstItem="5q2-DS-x36" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ucy-1T-C7Y"/>
+            </constraints>
+            <point key="canvasLocation" x="-192.5" y="-5.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar" width="375" height="64"/>
+        <image name="navBar_back" width="50" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPCreateFinishView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3r-ut-xe0">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_create_viewBG" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-CI-ZQP"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7O-4Y-1CV">
+                            <attributedString key="attributedText">
+                                <fragment content="请确认您所创建的信息，返回继续编辑请按">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" “">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="关闭">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="”">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="，继续请按">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content=" “">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="确认">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="” ">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="按钮。">
+                                    <attributes>
+                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <font key="NSFont" size="16" name="PingFangSC-Regular"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="10" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqC-x9-BLF">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在位置：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sth-dy-mZA">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="gxE-5I-zKE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-Kt-wdc">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动项目：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ev7-n9-cBA">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="JCE-qC-tiE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y74-fz-ccV">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-jm-Aw8">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="VeT-eQ-9mj"/>
+                                <constraint firstAttribute="height" constant="1" id="YJ9-Jm-6Vf"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="YJ9-Jm-6Vf"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始日期：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odo-mO-p6B">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="O4F-y5-jyW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z78-Br-AiJ">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5u1-3G-SQq">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="XCf-BD-m6S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbF-8T-I0V">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwL-ow-oOC">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人数范围：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZW-sm-fnN">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="hST-SJ-JoH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vh-mH-xhi">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJq-9B-T4n">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="SDF-yU-6Ua"/>
+                                <constraint firstAttribute="height" constant="1" id="ie8-e3-VEX"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="ie8-e3-VEX"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动价格：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCd-HF-HD1">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="fjZ-Hu-kv4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5W-Ez-qXC">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收费方式：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgr-Cf-zxt">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="tmv-Fi-Ben"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYC-oJ-uAy">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a6p-jq-pZN">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="cdp-YS-FuB"/>
+                                <constraint firstAttribute="height" constant="1" id="cma-ai-B8i"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="cma-ai-B8i"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否公开：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COb-Le-sEK">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="s6r-FD-qwb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZa-7h-IJh">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详情描述：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ9-9c-pxR">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="vFs-9l-f65"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW5-3z-Xpy">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="heb-8t-Oo9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确认"/>
+                            <connections>
+                                <action selector="confirmButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DNg-3v-5F6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tF-AE-lEG">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="KMU-it-NUx"/>
+                                <constraint firstAttribute="width" constant="20" id="QvJ-xp-Cw6"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_exit"/>
+                            <connections>
+                                <action selector="exitButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="aYw-rx-1Qj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动等级：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-rr-rwu">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="gUB-1T-3gN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有待填写" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krc-Uy-kSv">
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0W-3j-aKk">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="dvf-6S-uAK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YqC-x9-BLF" secondAttribute="trailing" constant="60" id="0NV-FB-DTN"/>
+                        <constraint firstItem="S5W-Ez-qXC" firstAttribute="top" secondItem="KJq-9B-T4n" secondAttribute="bottom" constant="8" id="1s5-0K-p0w"/>
+                        <constraint firstItem="C3c-Kt-wdc" firstAttribute="top" secondItem="YqC-x9-BLF" secondAttribute="bottom" constant="5" id="2vo-pi-Chc"/>
+                        <constraint firstItem="Ev7-n9-cBA" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="3Gz-uE-P7v"/>
+                        <constraint firstItem="a6p-jq-pZN" firstAttribute="top" secondItem="IYC-oJ-uAy" secondAttribute="bottom" constant="8" id="3Ow-2G-A15"/>
+                        <constraint firstItem="y74-fz-ccV" firstAttribute="top" secondItem="C3c-Kt-wdc" secondAttribute="bottom" constant="5" id="6Ic-TB-nax"/>
+                        <constraint firstItem="fbF-8T-I0V" firstAttribute="leading" secondItem="5u1-3G-SQq" secondAttribute="trailing" id="9MO-Ng-ZAs"/>
+                        <constraint firstItem="yW5-3z-Xpy" firstAttribute="top" secondItem="Krc-Uy-kSv" secondAttribute="bottom" constant="25" id="BQc-hU-wrq"/>
+                        <constraint firstAttribute="trailing" secondItem="T7O-4Y-1CV" secondAttribute="trailing" constant="50" id="BZ9-Hz-rJM"/>
+                        <constraint firstItem="E8f-rr-rwu" firstAttribute="top" secondItem="5u1-3G-SQq" secondAttribute="bottom" constant="6" id="Bx4-ne-duH"/>
+                        <constraint firstItem="T7O-4Y-1CV" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="50" id="Bya-ir-33u"/>
+                        <constraint firstAttribute="bottom" secondItem="dPl-CI-ZQP" secondAttribute="bottom" id="CP2-tL-aaA"/>
+                        <constraint firstAttribute="height" constant="500" id="Cy2-Tl-CXD"/>
+                        <constraint firstAttribute="trailing" secondItem="WwL-ow-oOC" secondAttribute="trailing" constant="60" id="EUt-fc-yIP"/>
+                        <constraint firstItem="Krc-Uy-kSv" firstAttribute="top" secondItem="OZa-7h-IJh" secondAttribute="bottom" constant="5" id="F9H-98-Tg3"/>
+                        <constraint firstItem="5u1-3G-SQq" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="F9i-8L-AyM"/>
+                        <constraint firstItem="dPl-CI-ZQP" firstAttribute="top" secondItem="K3r-ut-xe0" secondAttribute="top" id="Fce-iQ-8XW"/>
+                        <constraint firstItem="z78-Br-AiJ" firstAttribute="leading" secondItem="Odo-mO-p6B" secondAttribute="trailing" id="Fij-dj-HQb"/>
+                        <constraint firstItem="tk7-jm-Aw8" firstAttribute="top" secondItem="y74-fz-ccV" secondAttribute="bottom" constant="8" id="Fnc-Yq-0nG"/>
+                        <constraint firstItem="Krc-Uy-kSv" firstAttribute="leading" secondItem="rQ9-9c-pxR" secondAttribute="trailing" id="Gng-Xz-Axn"/>
+                        <constraint firstItem="OZa-7h-IJh" firstAttribute="top" secondItem="a6p-jq-pZN" secondAttribute="bottom" constant="8" id="Gsd-vc-4Th"/>
+                        <constraint firstAttribute="trailing" secondItem="z78-Br-AiJ" secondAttribute="trailing" constant="60" id="I4X-dm-IvW"/>
+                        <constraint firstAttribute="trailing" secondItem="C3c-Kt-wdc" secondAttribute="trailing" constant="60" id="Iax-7G-U4S"/>
+                        <constraint firstItem="3Vh-mH-xhi" firstAttribute="leading" secondItem="tZW-sm-fnN" secondAttribute="trailing" id="JrK-0n-RT2"/>
+                        <constraint firstItem="z78-Br-AiJ" firstAttribute="top" secondItem="tk7-jm-Aw8" secondAttribute="bottom" constant="8" id="K09-vd-GuJ"/>
+                        <constraint firstItem="COb-Le-sEK" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="Kgf-3L-rRJ"/>
+                        <constraint firstItem="rQ9-9c-pxR" firstAttribute="top" secondItem="COb-Le-sEK" secondAttribute="bottom" constant="5" id="KhI-dz-Pey"/>
+                        <constraint firstItem="tZW-sm-fnN" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="L5e-kD-8HD"/>
+                        <constraint firstItem="YqC-x9-BLF" firstAttribute="leading" secondItem="A0W-3j-aKk" secondAttribute="trailing" id="LbI-R8-aiP"/>
+                        <constraint firstItem="S5W-Ez-qXC" firstAttribute="leading" secondItem="gCd-HF-HD1" secondAttribute="trailing" id="MrQ-g2-zxS"/>
+                        <constraint firstItem="WwL-ow-oOC" firstAttribute="leading" secondItem="E8f-rr-rwu" secondAttribute="trailing" id="Nc1-4T-Lhm"/>
+                        <constraint firstItem="fbF-8T-I0V" firstAttribute="top" secondItem="z78-Br-AiJ" secondAttribute="bottom" constant="5" id="OPW-oY-N3r"/>
+                        <constraint firstAttribute="trailing" secondItem="6tF-AE-lEG" secondAttribute="trailing" constant="15" id="PLd-xe-FQc"/>
+                        <constraint firstAttribute="trailing" secondItem="Krc-Uy-kSv" secondAttribute="trailing" constant="60" id="QSn-8I-3df"/>
+                        <constraint firstItem="Cgr-Cf-zxt" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="QxT-cr-7o4"/>
+                        <constraint firstItem="tZW-sm-fnN" firstAttribute="top" secondItem="E8f-rr-rwu" secondAttribute="bottom" constant="5" id="RJo-yp-KFJ"/>
+                        <constraint firstAttribute="trailing" secondItem="tk7-jm-Aw8" secondAttribute="trailing" constant="25" id="S2E-L1-Zuc"/>
+                        <constraint firstItem="rQ9-9c-pxR" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="S99-68-q5Z"/>
+                        <constraint firstItem="Odo-mO-p6B" firstAttribute="top" secondItem="tk7-jm-Aw8" secondAttribute="bottom" constant="8" id="SIs-yE-aGp"/>
+                        <constraint firstAttribute="trailing" secondItem="yW5-3z-Xpy" secondAttribute="trailing" constant="25" id="TM7-aA-7BB"/>
+                        <constraint firstItem="E8f-rr-rwu" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="UpW-OF-In1"/>
+                        <constraint firstItem="KJq-9B-T4n" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="25" id="Vac-1R-NjF"/>
+                        <constraint firstItem="gCd-HF-HD1" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="YSh-Wp-DmU"/>
+                        <constraint firstAttribute="trailing" secondItem="fbF-8T-I0V" secondAttribute="trailing" constant="60" id="ZRq-KH-s6V"/>
+                        <constraint firstItem="WwL-ow-oOC" firstAttribute="top" secondItem="fbF-8T-I0V" secondAttribute="bottom" constant="5" id="ZSD-0O-suF"/>
+                        <constraint firstItem="A0W-3j-aKk" firstAttribute="top" secondItem="T7O-4Y-1CV" secondAttribute="bottom" constant="20" id="ZYC-5W-gp5"/>
+                        <constraint firstItem="yW5-3z-Xpy" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="25" id="aTJ-PF-jP0"/>
+                        <constraint firstItem="IYC-oJ-uAy" firstAttribute="leading" secondItem="Cgr-Cf-zxt" secondAttribute="trailing" id="agT-St-2o4"/>
+                        <constraint firstItem="C3c-Kt-wdc" firstAttribute="leading" secondItem="sth-dy-mZA" secondAttribute="trailing" id="amQ-fY-uhz"/>
+                        <constraint firstItem="A0W-3j-aKk" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="b1q-9c-VFm"/>
+                        <constraint firstItem="dPl-CI-ZQP" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" id="e3Y-ua-XvE"/>
+                        <constraint firstItem="sth-dy-mZA" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="eCP-DS-d0G"/>
+                        <constraint firstItem="OZa-7h-IJh" firstAttribute="leading" secondItem="COb-Le-sEK" secondAttribute="trailing" id="efw-6Z-Qm1"/>
+                        <constraint firstItem="Ev7-n9-cBA" firstAttribute="top" secondItem="sth-dy-mZA" secondAttribute="bottom" constant="5" id="fZq-mQ-BiG"/>
+                        <constraint firstAttribute="trailing" secondItem="dPl-CI-ZQP" secondAttribute="trailing" id="fZs-Bf-3Ts"/>
+                        <constraint firstItem="KJq-9B-T4n" firstAttribute="top" secondItem="3Vh-mH-xhi" secondAttribute="bottom" constant="8" id="gQ9-D9-f6r"/>
+                        <constraint firstAttribute="trailing" secondItem="3Vh-mH-xhi" secondAttribute="trailing" constant="60" id="gU4-BB-9P5"/>
+                        <constraint firstAttribute="trailing" secondItem="IYC-oJ-uAy" secondAttribute="trailing" constant="60" id="hOH-AG-n4U"/>
+                        <constraint firstItem="a6p-jq-pZN" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="25" id="hP1-nc-YK6"/>
+                        <constraint firstItem="5u1-3G-SQq" firstAttribute="top" secondItem="Odo-mO-p6B" secondAttribute="bottom" constant="5" id="hvM-J7-DSN"/>
+                        <constraint firstAttribute="trailing" secondItem="a6p-jq-pZN" secondAttribute="trailing" constant="25" id="j3b-0L-KxA"/>
+                        <constraint firstItem="COb-Le-sEK" firstAttribute="top" secondItem="a6p-jq-pZN" secondAttribute="bottom" constant="8" id="jr5-5R-aHY"/>
+                        <constraint firstItem="T7O-4Y-1CV" firstAttribute="top" secondItem="K3r-ut-xe0" secondAttribute="top" constant="30" id="kCe-vg-B2B"/>
+                        <constraint firstItem="tk7-jm-Aw8" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="25" id="kDy-Wk-Zka"/>
+                        <constraint firstAttribute="trailing" secondItem="y74-fz-ccV" secondAttribute="trailing" constant="60" id="kJZ-pf-0Bg"/>
+                        <constraint firstItem="gCd-HF-HD1" firstAttribute="top" secondItem="KJq-9B-T4n" secondAttribute="bottom" constant="8" id="kwM-iV-DGp"/>
+                        <constraint firstItem="Odo-mO-p6B" firstAttribute="leading" secondItem="K3r-ut-xe0" secondAttribute="leading" constant="70" id="mL7-lE-ZGC"/>
+                        <constraint firstAttribute="trailing" secondItem="S5W-Ez-qXC" secondAttribute="trailing" constant="60" id="oTb-p8-26G"/>
+                        <constraint firstItem="y74-fz-ccV" firstAttribute="leading" secondItem="Ev7-n9-cBA" secondAttribute="trailing" id="oyD-2p-a1y"/>
+                        <constraint firstItem="3Vh-mH-xhi" firstAttribute="top" secondItem="WwL-ow-oOC" secondAttribute="bottom" constant="5" id="pJa-6d-L3w"/>
+                        <constraint firstAttribute="trailing" secondItem="KJq-9B-T4n" secondAttribute="trailing" constant="25" id="w7g-h0-cGe"/>
+                        <constraint firstItem="6tF-AE-lEG" firstAttribute="top" secondItem="K3r-ut-xe0" secondAttribute="top" constant="10" id="weo-Xe-WSa"/>
+                        <constraint firstItem="IYC-oJ-uAy" firstAttribute="top" secondItem="S5W-Ez-qXC" secondAttribute="bottom" constant="5" id="wt3-tG-ztk"/>
+                        <constraint firstItem="sth-dy-mZA" firstAttribute="top" secondItem="A0W-3j-aKk" secondAttribute="bottom" constant="5" id="xuw-GB-uDV"/>
+                        <constraint firstItem="Cgr-Cf-zxt" firstAttribute="top" secondItem="gCd-HF-HD1" secondAttribute="bottom" constant="5" id="yJX-kI-uDK"/>
+                        <constraint firstAttribute="trailing" secondItem="OZa-7h-IJh" secondAttribute="trailing" constant="60" id="ymm-cM-RRk"/>
+                        <constraint firstItem="YqC-x9-BLF" firstAttribute="top" secondItem="T7O-4Y-1CV" secondAttribute="bottom" constant="20" id="zGw-Xg-9RD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="K3r-ut-xe0" secondAttribute="trailing" constant="10" id="Pza-uG-uLl"/>
+                <constraint firstItem="K3r-ut-xe0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="R8f-cn-iag"/>
+                <constraint firstItem="K3r-ut-xe0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="gLy-nS-nc3"/>
+            </constraints>
+            <connections>
+                <outlet property="confirmButton" destination="yW5-3z-Xpy" id="Bk2-kv-RVC"/>
+                <outlet property="confirmView" destination="K3r-ut-xe0" id="jrp-aB-3us"/>
+                <outlet property="sportsChargeType" destination="IYC-oJ-uAy" id="21A-ww-MXR"/>
+                <outlet property="sportsDate" destination="z78-Br-AiJ" id="1Mq-yz-9Vv"/>
+                <outlet property="sportsEvent" destination="y74-fz-ccV" id="dKS-Ah-dle"/>
+                <outlet property="sportsLevel" destination="WwL-ow-oOC" id="OiN-eF-oCf"/>
+                <outlet property="sportsLocation" destination="C3c-Kt-wdc" id="C7B-w8-rTz"/>
+                <outlet property="sportsMemberBorder" destination="3Vh-mH-xhi" id="Deq-9F-ogv"/>
+                <outlet property="sportsName" destination="YqC-x9-BLF" id="HUu-CG-Xk1"/>
+                <outlet property="sportsPrice" destination="S5W-Ez-qXC" id="kKi-Xt-H5Y"/>
+                <outlet property="sportsPrivacy" destination="OZa-7h-IJh" id="p9f-ds-Gwk"/>
+                <outlet property="sportsSummary" destination="Krc-Uy-kSv" id="k4Y-Sw-9IT"/>
+                <outlet property="sportsTime" destination="fbF-8T-I0V" id="Bb1-UG-H2D"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="425"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sports_create_exit" width="20" height="20"/>
+        <image name="Sports_create_viewBG" width="355" height="350"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSportsPageActiveViewController">
+            <connections>
+                <outlet property="tableView" destination="buu-eb-W1J" id="0ZQ-0l-1OD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lak-Ag-S1v">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="Clo-S2-ZjF"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="激活运动页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbM-eo-nf1">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-mv-cy8">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="glz-ht-Ph5"/>
+                                <constraint firstAttribute="height" constant="25" id="uhv-EZ-IHL"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="LeI-Xi-ycT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6Mb-mv-cy8" firstAttribute="centerY" secondItem="lak-Ag-S1v" secondAttribute="centerY" constant="8" id="1m9-sD-TQu"/>
+                        <constraint firstAttribute="bottom" secondItem="Clo-S2-ZjF" secondAttribute="bottom" id="APF-0S-n5V"/>
+                        <constraint firstAttribute="height" constant="64" id="AmB-4n-pXO"/>
+                        <constraint firstItem="gbM-eo-nf1" firstAttribute="centerX" secondItem="lak-Ag-S1v" secondAttribute="centerX" id="HS3-ze-JrQ"/>
+                        <constraint firstItem="6Mb-mv-cy8" firstAttribute="leading" secondItem="lak-Ag-S1v" secondAttribute="leading" id="Ktk-fC-ldb"/>
+                        <constraint firstAttribute="trailing" secondItem="Clo-S2-ZjF" secondAttribute="trailing" id="MG8-em-VL5"/>
+                        <constraint firstItem="gbM-eo-nf1" firstAttribute="centerY" secondItem="lak-Ag-S1v" secondAttribute="centerY" constant="8" id="Qhh-8E-TfB"/>
+                        <constraint firstItem="Clo-S2-ZjF" firstAttribute="top" secondItem="lak-Ag-S1v" secondAttribute="top" id="VhX-DE-RMm"/>
+                        <constraint firstItem="Clo-S2-ZjF" firstAttribute="leading" secondItem="lak-Ag-S1v" secondAttribute="leading" id="yjR-BN-feA"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="buu-eb-W1J">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lak-Ag-S1v" secondAttribute="trailing" id="L7R-Pl-XGh"/>
+                <constraint firstItem="lak-Ag-S1v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NqQ-pH-hD5"/>
+                <constraint firstItem="buu-eb-W1J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O7w-Le-JuB"/>
+                <constraint firstItem="lak-Ag-S1v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OD9-gq-6v8"/>
+                <constraint firstAttribute="bottom" secondItem="buu-eb-W1J" secondAttribute="bottom" id="S26-ip-RTA"/>
+                <constraint firstItem="buu-eb-W1J" firstAttribute="top" secondItem="lak-Ag-S1v" secondAttribute="bottom" id="YbI-j5-DxT"/>
+                <constraint firstAttribute="trailing" secondItem="buu-eb-W1J" secondAttribute="trailing" id="uV1-YW-MCI"/>
+            </constraints>
+            <point key="canvasLocation" x="-6" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

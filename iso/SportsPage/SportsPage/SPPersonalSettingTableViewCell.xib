@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" id="KGk-i7-Jjw" customClass="SPPersonalSettingTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mine_More" translatesAutoresizingMaskIntoConstraints="NO" id="mCN-Zu-3D8">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="dXg-wq-zZy"/>
+                            <constraint firstAttribute="height" constant="15" id="fu7-Cv-hs4"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQU-b3-pKt">
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="b82-My-idS"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPU-vi-oFd">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="rQU-b3-pKt" secondAttribute="trailing" constant="15" id="1Ui-Dc-4Zg"/>
+                    <constraint firstAttribute="bottom" secondItem="rQU-b3-pKt" secondAttribute="bottom" id="8UW-jG-Jwo"/>
+                    <constraint firstItem="mCN-Zu-3D8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Adx-Sd-IeB"/>
+                    <constraint firstItem="oPU-vi-oFd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="CzZ-xW-XIv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="mCN-Zu-3D8" secondAttribute="trailing" constant="10" id="Y1o-BM-fVp"/>
+                    <constraint firstItem="rQU-b3-pKt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bNb-We-LKH"/>
+                    <constraint firstItem="oPU-vi-oFd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hRS-4U-H4y"/>
+                    <constraint firstItem="mCN-Zu-3D8" firstAttribute="leading" secondItem="oPU-vi-oFd" secondAttribute="trailing" constant="10" id="t4n-hN-EOa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="oPU-vi-oFd" id="D9S-vD-bNo"/>
+                <outlet property="lineView" destination="rQU-b3-pKt" id="BUb-jM-QHO"/>
+                <outlet property="moreImageView" destination="mCN-Zu-3D8" id="78z-n2-jbx"/>
+            </connections>
+            <point key="canvasLocation" x="592" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Mine_More" width="15" height="15"/>
+    </resources>
+</document>

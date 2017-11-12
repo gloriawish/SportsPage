@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPPersonalEventStatusViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMe-yi-Ddz">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="CLE-m5-84v"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2s-2y-exu">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Enw-go-4EI">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="QkD-iq-UlU"/>
+                                <constraint firstAttribute="height" constant="25" id="yb3-5H-MuL"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="De7-5W-sfc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CLE-m5-84v" secondAttribute="trailing" id="DCB-Ck-kce"/>
+                        <constraint firstItem="CLE-m5-84v" firstAttribute="top" secondItem="lMe-yi-Ddz" secondAttribute="top" id="OD8-5n-C5f"/>
+                        <constraint firstItem="k2s-2y-exu" firstAttribute="centerY" secondItem="lMe-yi-Ddz" secondAttribute="centerY" constant="8" id="V8R-aw-6uD"/>
+                        <constraint firstItem="Enw-go-4EI" firstAttribute="leading" secondItem="lMe-yi-Ddz" secondAttribute="leading" id="W38-YM-dUq"/>
+                        <constraint firstAttribute="bottom" secondItem="CLE-m5-84v" secondAttribute="bottom" id="Yz2-og-TSm"/>
+                        <constraint firstItem="CLE-m5-84v" firstAttribute="leading" secondItem="lMe-yi-Ddz" secondAttribute="leading" id="h8U-nQ-5EK"/>
+                        <constraint firstAttribute="height" constant="64" id="isI-gv-rE4"/>
+                        <constraint firstItem="Enw-go-4EI" firstAttribute="centerY" secondItem="lMe-yi-Ddz" secondAttribute="centerY" constant="8" id="lRI-mf-nR7"/>
+                        <constraint firstItem="k2s-2y-exu" firstAttribute="centerX" secondItem="lMe-yi-Ddz" secondAttribute="centerX" id="mlh-2w-jFb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lMe-yi-Ddz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1xO-zy-yqc"/>
+                <constraint firstAttribute="trailing" secondItem="lMe-yi-Ddz" secondAttribute="trailing" id="MYe-JN-dgX"/>
+                <constraint firstItem="lMe-yi-Ddz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qax-hB-GLx"/>
+            </constraints>
+            <point key="canvasLocation" x="-175" y="82"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

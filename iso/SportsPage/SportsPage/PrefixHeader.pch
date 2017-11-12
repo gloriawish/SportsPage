@@ -1,0 +1,86 @@
+//
+//  PrefixHeader.pch
+//  SportsPage
+//
+//  Created by absolute on 2016/10/17.
+//  Copyright © 2016年 Absolute. All rights reserved.
+//
+
+//$(SRCROOT)/SportsPage/PrefixHeader.pch
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark - Commom
+#define IsDevelopmentEnvironment 0
+
+#pragma mark - Key
+#pragma mark RongCloud
+
+#if IsDevelopmentEnvironment
+#define KEY_RONGCLOUD   @"xxxx"    //融云测试key
+#else
+#define KEY_RONGCLOUD   @"xxxx"    //融云key
+#endif
+
+#pragma mark WeChat
+#define KEY_WEIXIN      @"xxxx" //微信KEY
+#define KEY_SECRET      @"xxxx" //微信SECRET
+
+#pragma mark Tencent
+#define KEY_TENCENT     @"xxxx" //腾讯KEY
+
+#pragma mark BaiduMap
+#define KEY_BAIDUMAP    @"xxxx" //百度云key
+
+#pragma mark GetUI
+#define KEY_GETUI_APPID        @"xxxx"    //GetUI appid
+#define KEY_GETUI_APPKEY       @"xxxx"    //GetUI key
+#define KEY_GETUI_APPSECRET    @"xxxx"    //GetUI secret
+
+#pragma mark - Config
+#define KEY_TABBAR_CLASS_NAME @[@"SPSportsPageViewController", \
+                                @"SPIMViewController", \
+                                @"SPContactViewController", \
+                                @"SPPersonalViewController"]
+
+#define KEY_TABBAR_TITLE_NAME @[@"运动", \
+                                @"聊天", \
+                                @"通讯录", \
+                                @"我"]
+
+#define KEY_TABBAR_IMAGE_NORMAL_NAME @[@"tabBar_sportsPage_nor", \
+                                       @"tabBar_IM_nor", \
+                                       @"tabBar_contact_nor", \
+                                       @"tabBar_personal_nor"]
+
+#define KEY_TABBAR_IMAGE_SELECTED_NAME @[@"tabBar_sportsPage_sel", \
+                                         @"tabBar_IM_sel", \
+                                         @"tabBar_contact_sel", \
+                                         @"tabBar_personal_sel"]
+
+#pragma mark - Notification
+#define NOTIFICATION_RELOAD_CONVERSATION @"NotificationReloadConversation"
+#define NOTIFICATION_SPORTS_MAIN_CHANGE_TITLE @"NotificationSportsMainChangeTitle"
+#define NOTIFICATION_SPORTS_ORDER_PAYPASS @"NotificationSportsOrderPaypass"
+#define NOTIFICATION_SPORTS_MANAGER_ADD_FRIENDS @"NotificationSportsAddManagerFriends"
+#define NOTIFICATION_SPORTS_MANAGER_CHECK_FRIENDS @"NotificationSportsCheckManagerFriends"
+#define NOTIFICATION_MINE_PUSH_NEXT @"NotificationMinePushNextViewController"
+#define NOTIFICATION_MINE_FOCUS_RECORD_ACTION @"NotificationMineFocusRecordAction"
+
+#define NOTIFICATION_SPORTS_SHARE @"NotificationSportsShare"
+#define NOTIFICATION_CLUB_SHARE @"NotificationClubShare"
+
+#define NOTIFICATION_PINGPP_PAY @"NotificationPingppPay"        //付款
+#define NOTIFICATION_PINGPP_TopOn @"NotificationPingppTopOn"    //充值
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define CONTENTTYPE @"text/html"
+
+#pragma mark - Global_Import
+#import "SPGlobalConfig.h"
+#import "SPPathConfig.h"
+
+#endif

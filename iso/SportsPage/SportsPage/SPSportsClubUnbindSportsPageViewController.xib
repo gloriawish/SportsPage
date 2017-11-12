@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSportsClubUnbindSportsPageViewController">
+            <connections>
+                <outlet property="bindSportsPageButton" destination="BpM-Ic-JDW" id="83u-SG-x4O"/>
+                <outlet property="tableView" destination="Cwb-EY-l8l" id="sgR-EV-D81"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnd-rg-rna">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="Kha-m3-98a"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定运动页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-0Z-LhV">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAf-fM-X23">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="B4C-r7-lL9"/>
+                                <constraint firstAttribute="width" constant="50" id="qOO-58-MqS"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="kFD-LD-8ni"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-Ic-JDW">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="绑定"/>
+                            <connections>
+                                <action selector="bindSportsPageAction:" destination="-1" eventType="touchUpInside" id="AMc-sJ-vFz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BpM-Ic-JDW" firstAttribute="centerY" secondItem="bnd-rg-rna" secondAttribute="centerY" constant="8" id="1Z6-EL-Ghr"/>
+                        <constraint firstItem="Kha-m3-98a" firstAttribute="leading" secondItem="bnd-rg-rna" secondAttribute="leading" id="8eo-Vg-SKP"/>
+                        <constraint firstItem="Cf5-0Z-LhV" firstAttribute="centerY" secondItem="bnd-rg-rna" secondAttribute="centerY" constant="8" id="8l9-sM-nob"/>
+                        <constraint firstAttribute="bottom" secondItem="Kha-m3-98a" secondAttribute="bottom" id="90M-Vl-rxP"/>
+                        <constraint firstItem="Kha-m3-98a" firstAttribute="top" secondItem="bnd-rg-rna" secondAttribute="top" id="Arl-Cn-QmS"/>
+                        <constraint firstItem="Cf5-0Z-LhV" firstAttribute="centerX" secondItem="bnd-rg-rna" secondAttribute="centerX" id="BRa-gL-QuT"/>
+                        <constraint firstAttribute="trailing" secondItem="Kha-m3-98a" secondAttribute="trailing" id="CDt-WJ-4dO"/>
+                        <constraint firstAttribute="trailing" secondItem="BpM-Ic-JDW" secondAttribute="trailing" constant="15" id="ENd-pc-GAj"/>
+                        <constraint firstAttribute="height" constant="64" id="nUe-dJ-LZk"/>
+                        <constraint firstItem="oAf-fM-X23" firstAttribute="centerY" secondItem="bnd-rg-rna" secondAttribute="centerY" constant="8" id="t5q-Ki-4Cw"/>
+                        <constraint firstItem="oAf-fM-X23" firstAttribute="leading" secondItem="bnd-rg-rna" secondAttribute="leading" id="wf2-Xh-XRH"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cwb-EY-l8l">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Cwb-EY-l8l" secondAttribute="bottom" id="JIC-HO-4Lj"/>
+                <constraint firstItem="bnd-rg-rna" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aME-by-D3F"/>
+                <constraint firstAttribute="trailing" secondItem="Cwb-EY-l8l" secondAttribute="trailing" id="eJe-2W-hhx"/>
+                <constraint firstItem="Cwb-EY-l8l" firstAttribute="top" secondItem="bnd-rg-rna" secondAttribute="bottom" id="jPj-Cq-CUq"/>
+                <constraint firstAttribute="trailing" secondItem="bnd-rg-rna" secondAttribute="trailing" id="nZ4-Ua-GZH"/>
+                <constraint firstItem="Cwb-EY-l8l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wOy-1d-FFX"/>
+                <constraint firstItem="bnd-rg-rna" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zOl-Ny-DBW"/>
+            </constraints>
+            <point key="canvasLocation" x="-443" y="-7"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

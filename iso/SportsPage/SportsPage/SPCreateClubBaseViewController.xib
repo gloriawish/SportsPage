@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPCreateClubBaseViewController">
+            <connections>
+                <outlet property="clubEventTextField" destination="Dfl-w8-Nnx" id="Yw3-aA-kWb"/>
+                <outlet property="clubEventView" destination="K9O-ST-whZ" id="lg1-5J-PKH"/>
+                <outlet property="clubNameTextField" destination="kS7-n9-bWT" id="eAy-Ga-Ffh"/>
+                <outlet property="clubNameView" destination="Byq-Xk-WLd" id="P6n-c0-NaV"/>
+                <outlet property="clubTeamImageView" destination="0bE-St-goD" id="bKg-kj-zkV"/>
+                <outlet property="createClubNextButton" destination="6a6-1s-kYh" id="Bqm-h9-WaO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXt-0f-X3T">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="P4P-rY-oi0"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxQ-jd-WAp">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="UiN-QB-kvx"/>
+                                <constraint firstAttribute="height" constant="25" id="quz-YT-Uax"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="Clg-cE-yq1"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俱乐部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IXE-gm-g2k">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="P4P-rY-oi0" secondAttribute="bottom" id="4fe-6g-NFZ"/>
+                        <constraint firstItem="nxQ-jd-WAp" firstAttribute="centerY" secondItem="uXt-0f-X3T" secondAttribute="centerY" constant="8" id="Fr0-bD-s2t"/>
+                        <constraint firstItem="IXE-gm-g2k" firstAttribute="centerY" secondItem="uXt-0f-X3T" secondAttribute="centerY" constant="8" id="Skw-q1-i2V"/>
+                        <constraint firstItem="nxQ-jd-WAp" firstAttribute="leading" secondItem="uXt-0f-X3T" secondAttribute="leading" id="UjA-JU-9Fh"/>
+                        <constraint firstAttribute="trailing" secondItem="P4P-rY-oi0" secondAttribute="trailing" id="bAW-0b-1qT"/>
+                        <constraint firstItem="P4P-rY-oi0" firstAttribute="leading" secondItem="uXt-0f-X3T" secondAttribute="leading" id="ipt-Kp-vBU"/>
+                        <constraint firstItem="P4P-rY-oi0" firstAttribute="top" secondItem="uXt-0f-X3T" secondAttribute="top" id="iyc-ut-nsn"/>
+                        <constraint firstItem="IXE-gm-g2k" firstAttribute="centerX" secondItem="uXt-0f-X3T" secondAttribute="centerX" id="neh-tG-Fn9"/>
+                        <constraint firstAttribute="height" constant="64" id="uys-M2-DjO"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_create_club_addTeamIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0bE-St-goD">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0bE-St-goD" secondAttribute="height" id="8Bp-ky-1Yk"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byq-Xk-WLd">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入俱乐部名称，不超过10个字" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kS7-n9-bWT">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kS7-n9-bWT" firstAttribute="leading" secondItem="Byq-Xk-WLd" secondAttribute="leading" constant="10" id="5wx-MZ-F4z"/>
+                        <constraint firstItem="kS7-n9-bWT" firstAttribute="top" secondItem="Byq-Xk-WLd" secondAttribute="top" constant="10" id="ZUk-z5-1s2"/>
+                        <constraint firstAttribute="bottom" secondItem="kS7-n9-bWT" secondAttribute="bottom" constant="10" id="lfY-5u-R1l"/>
+                        <constraint firstAttribute="trailing" secondItem="kS7-n9-bWT" secondAttribute="trailing" constant="10" id="p4w-jQ-Ghj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9O-ST-whZ">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="选择运动类型" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dfl-w8-Nnx">
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mine_More" translatesAutoresizingMaskIntoConstraints="NO" id="4x5-Kr-M73">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="4x5-Kr-M73" secondAttribute="height" id="vQg-Ad-uaV"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Dfl-w8-Nnx" secondAttribute="bottom" constant="10" id="5Ri-hF-vYd"/>
+                        <constraint firstItem="Dfl-w8-Nnx" firstAttribute="top" secondItem="K9O-ST-whZ" secondAttribute="top" constant="10" id="Aht-CL-9VL"/>
+                        <constraint firstAttribute="bottom" secondItem="4x5-Kr-M73" secondAttribute="bottom" constant="15" id="E47-kG-9bo"/>
+                        <constraint firstAttribute="trailing" secondItem="Dfl-w8-Nnx" secondAttribute="trailing" constant="10" id="OYP-SP-Mgc"/>
+                        <constraint firstItem="Dfl-w8-Nnx" firstAttribute="leading" secondItem="K9O-ST-whZ" secondAttribute="leading" constant="10" id="XdO-oD-ZAE"/>
+                        <constraint firstItem="4x5-Kr-M73" firstAttribute="top" secondItem="K9O-ST-whZ" secondAttribute="top" constant="15" id="aAq-Jw-BSj"/>
+                        <constraint firstAttribute="trailing" secondItem="4x5-Kr-M73" secondAttribute="trailing" constant="10" id="elw-aW-dd7"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a6-1s-kYh">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8mR-Bq-uXv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="下一步"/>
+                    <connections>
+                        <action selector="createClubNextButtonAction:" destination="-1" eventType="touchUpInside" id="ZAg-o1-8dw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uXt-0f-X3T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6gV-6w-82D"/>
+                <constraint firstItem="Byq-Xk-WLd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="7hm-6s-GAG"/>
+                <constraint firstItem="K9O-ST-whZ" firstAttribute="top" secondItem="Byq-Xk-WLd" secondAttribute="bottom" constant="6" id="8xx-pG-v0T"/>
+                <constraint firstItem="K9O-ST-whZ" firstAttribute="height" secondItem="Byq-Xk-WLd" secondAttribute="height" id="9fV-U7-qQi"/>
+                <constraint firstItem="Byq-Xk-WLd" firstAttribute="height" secondItem="0bE-St-goD" secondAttribute="height" multiplier="1:3" id="B5q-oZ-u9v"/>
+                <constraint firstItem="6a6-1s-kYh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="FjP-bO-OYo"/>
+                <constraint firstItem="0bE-St-goD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:5" id="Hdc-eL-0D5"/>
+                <constraint firstItem="Byq-Xk-WLd" firstAttribute="top" secondItem="0bE-St-goD" secondAttribute="bottom" constant="25" id="K9l-0L-hCh"/>
+                <constraint firstAttribute="trailing" secondItem="K9O-ST-whZ" secondAttribute="trailing" constant="10" id="NvX-22-Vxd"/>
+                <constraint firstItem="K9O-ST-whZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="PE2-Rd-NYE"/>
+                <constraint firstAttribute="trailing" secondItem="Byq-Xk-WLd" secondAttribute="trailing" constant="10" id="XUe-JI-CpK"/>
+                <constraint firstAttribute="bottom" secondItem="6a6-1s-kYh" secondAttribute="bottom" constant="50" id="YaH-Kt-NyF"/>
+                <constraint firstAttribute="trailing" secondItem="uXt-0f-X3T" secondAttribute="trailing" id="e10-gB-Tng"/>
+                <constraint firstItem="0bE-St-goD" firstAttribute="top" secondItem="uXt-0f-X3T" secondAttribute="bottom" constant="15" id="heh-Eh-GpA"/>
+                <constraint firstItem="0bE-St-goD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lRQ-Xy-HQU"/>
+                <constraint firstAttribute="trailing" secondItem="6a6-1s-kYh" secondAttribute="trailing" constant="31" id="niF-TH-pPD"/>
+                <constraint firstItem="uXt-0f-X3T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sc8-h5-Cmt"/>
+            </constraints>
+            <point key="canvasLocation" x="-571" y="-178"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Mine_More" width="15" height="15"/>
+        <image name="Sports_create_club_addTeamIcon" width="150" height="150"/>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

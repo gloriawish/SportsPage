@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPClubMembersDeleteAdminViewController">
+            <connections>
+                <outlet property="deleteAdminButton" destination="8YV-s6-4Nk" id="WTV-8v-tZb"/>
+                <outlet property="tableView" destination="ceh-Go-hCA" id="Md5-0F-UMK"/>
+                <outlet property="view" destination="oCG-y3-FZQ" id="CRu-23-kZW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oCG-y3-FZQ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tch-Xa-uHZ">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="2ke-I8-rYE"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删除管理员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQD-a2-QL7">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aQ-CX-LWd">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="AMk-1H-hBV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KQD-a2-QL7" firstAttribute="centerY" secondItem="Tch-Xa-uHZ" secondAttribute="centerY" constant="8" id="5sS-IR-R0w"/>
+                        <constraint firstItem="3aQ-CX-LWd" firstAttribute="centerY" secondItem="Tch-Xa-uHZ" secondAttribute="centerY" constant="8" id="ADb-S5-AGg"/>
+                        <constraint firstItem="2ke-I8-rYE" firstAttribute="top" secondItem="Tch-Xa-uHZ" secondAttribute="top" id="aIc-H9-crg"/>
+                        <constraint firstItem="2ke-I8-rYE" firstAttribute="leading" secondItem="Tch-Xa-uHZ" secondAttribute="leading" id="h4Q-hi-7ZJ"/>
+                        <constraint firstAttribute="bottom" secondItem="2ke-I8-rYE" secondAttribute="bottom" id="lyg-5a-3Ef"/>
+                        <constraint firstAttribute="height" constant="64" id="mnb-5D-2ez"/>
+                        <constraint firstAttribute="trailing" secondItem="2ke-I8-rYE" secondAttribute="trailing" id="p7C-P5-TgS"/>
+                        <constraint firstAttribute="trailing" secondItem="3aQ-CX-LWd" secondAttribute="trailing" constant="15" id="wQm-dz-F6B"/>
+                        <constraint firstItem="KQD-a2-QL7" firstAttribute="centerX" secondItem="Tch-Xa-uHZ" secondAttribute="centerX" id="wkx-dE-Ojr"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ceh-Go-hCA">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YV-s6-4Nk">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="FH0-KK-WB6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确认删除"/>
+                    <connections>
+                        <action selector="deleteAdminAction:" destination="-1" eventType="touchUpInside" id="03e-8a-BVR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Tch-Xa-uHZ" firstAttribute="top" secondItem="oCG-y3-FZQ" secondAttribute="top" id="BMV-5T-oKI"/>
+                <constraint firstItem="Tch-Xa-uHZ" firstAttribute="leading" secondItem="oCG-y3-FZQ" secondAttribute="leading" id="BoT-Ue-NOP"/>
+                <constraint firstAttribute="bottom" secondItem="ceh-Go-hCA" secondAttribute="bottom" id="HIZ-6L-ZmL"/>
+                <constraint firstAttribute="bottom" secondItem="8YV-s6-4Nk" secondAttribute="bottom" constant="25" id="VIp-ya-Pka"/>
+                <constraint firstItem="8YV-s6-4Nk" firstAttribute="leading" secondItem="oCG-y3-FZQ" secondAttribute="leading" constant="31" id="diM-KW-bJn"/>
+                <constraint firstAttribute="trailing" secondItem="ceh-Go-hCA" secondAttribute="trailing" id="eA3-8q-YT5"/>
+                <constraint firstAttribute="trailing" secondItem="Tch-Xa-uHZ" secondAttribute="trailing" id="rcH-ll-5Ny"/>
+                <constraint firstItem="ceh-Go-hCA" firstAttribute="leading" secondItem="oCG-y3-FZQ" secondAttribute="leading" id="reI-vR-Uht"/>
+                <constraint firstAttribute="trailing" secondItem="8YV-s6-4Nk" secondAttribute="trailing" constant="31" id="u7p-3a-eoO"/>
+                <constraint firstItem="ceh-Go-hCA" firstAttribute="top" secondItem="Tch-Xa-uHZ" secondAttribute="bottom" id="wzW-pZ-tp8"/>
+            </constraints>
+            <point key="canvasLocation" x="-485" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

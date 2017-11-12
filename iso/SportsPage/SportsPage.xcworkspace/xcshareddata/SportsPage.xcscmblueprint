@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7bda4729-06ed-4b13-aa4d-d98538084217",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7bda4729-06ed-4b13-aa4d-d98538084217" : {
+
+    },
+    "f6aac6ba-58ea-4ac0-8808-f5ddd62f3683" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7bda4729-06ed-4b13-aa4d-d98538084217" : 0,
+    "f6aac6ba-58ea-4ac0-8808-f5ddd62f3683" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E21B64FE-E06C-4B33-A7B3-9722A2C658C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7bda4729-06ed-4b13-aa4d-d98538084217" : "iosApp\/",
+    "f6aac6ba-58ea-4ac0-8808-f5ddd62f3683" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SportsPage",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SportsPage\/SportsPage.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/120.27.208.59\/iosApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7bda4729-06ed-4b13-aa4d-d98538084217"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/120.27.208.59\/sportpage",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "f6aac6ba-58ea-4ac0-8808-f5ddd62f3683"
+    }
+  ]
+}

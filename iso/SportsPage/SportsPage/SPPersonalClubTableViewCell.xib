@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalClubTableViewCell" id="KGk-i7-Jjw" customClass="SPPersonalClubTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgI-Ja-z4a">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNK-B7-f0h">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="VNK-B7-f0h" secondAttribute="height" id="iif-iC-Pit"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-Qb-jAj">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFf-ok-515">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="tFf-ok-515" firstAttribute="leading" secondItem="gbY-Qb-jAj" secondAttribute="leading" id="4hL-sX-myd"/>
+                                    <constraint firstAttribute="bottom" secondItem="tFf-ok-515" secondAttribute="bottom" id="73p-aq-laq"/>
+                                    <constraint firstItem="tFf-ok-515" firstAttribute="top" secondItem="gbY-Qb-jAj" secondAttribute="top" id="AES-lm-SN5"/>
+                                    <constraint firstAttribute="trailing" secondItem="tFf-ok-515" secondAttribute="trailing" id="rzt-WZ-rYk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俱乐部名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-M2-QJ2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="265-Kr-406"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38f-o6-RIx">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="NJR-iu-pxz"/>
+                                    <constraint firstAttribute="width" constant="15" id="iYM-UG-Q9u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活跃度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QC-xP-omE">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="181/300" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4d-jw-nl3">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-XN-cZV">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="0Yi-dd-PlF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0QZ-Dg-t5n">
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znX-48-smd">
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="113" image="club_members"/>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOS-Ob-BJA">
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="12" image="club_sportsPage"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="znX-48-smd" secondAttribute="trailing" constant="10" id="Irx-bc-lhY"/>
+                                    <constraint firstItem="znX-48-smd" firstAttribute="leading" secondItem="rOS-Ob-BJA" secondAttribute="trailing" constant="20" id="gZO-wU-5ft"/>
+                                    <constraint firstItem="rOS-Ob-BJA" firstAttribute="centerY" secondItem="0QZ-Dg-t5n" secondAttribute="centerY" id="inc-0Q-EJC"/>
+                                    <constraint firstItem="znX-48-smd" firstAttribute="centerY" secondItem="0QZ-Dg-t5n" secondAttribute="centerY" id="yZo-sC-fbO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D3g-M2-QJ2" firstAttribute="top" secondItem="jgI-Ja-z4a" secondAttribute="top" constant="10" id="DZL-zm-dOt"/>
+                            <constraint firstAttribute="trailing" secondItem="Vm6-XN-cZV" secondAttribute="trailing" constant="5" id="J6J-qM-57k"/>
+                            <constraint firstItem="Y4d-jw-nl3" firstAttribute="top" secondItem="gbY-Qb-jAj" secondAttribute="bottom" constant="5" id="Mu3-1p-dWk"/>
+                            <constraint firstItem="38f-o6-RIx" firstAttribute="top" secondItem="jgI-Ja-z4a" secondAttribute="top" constant="10" id="NYL-2y-J2J"/>
+                            <constraint firstAttribute="trailing" secondItem="gbY-Qb-jAj" secondAttribute="trailing" constant="15" id="QhK-gC-hpS"/>
+                            <constraint firstItem="VNK-B7-f0h" firstAttribute="leading" secondItem="jgI-Ja-z4a" secondAttribute="leading" constant="10" id="Qif-s0-bie"/>
+                            <constraint firstAttribute="trailing" secondItem="0QZ-Dg-t5n" secondAttribute="trailing" constant="10" id="TjW-N8-XyB"/>
+                            <constraint firstItem="gbY-Qb-jAj" firstAttribute="height" secondItem="VNK-B7-f0h" secondAttribute="height" multiplier="3:20" id="YZ6-m7-j31"/>
+                            <constraint firstItem="4QC-xP-omE" firstAttribute="top" secondItem="gbY-Qb-jAj" secondAttribute="bottom" constant="5" id="ZG1-XD-GJh"/>
+                            <constraint firstItem="0QZ-Dg-t5n" firstAttribute="leading" secondItem="jgI-Ja-z4a" secondAttribute="leading" constant="10" id="aqp-Ur-bPg"/>
+                            <constraint firstAttribute="bottom" secondItem="VNK-B7-f0h" secondAttribute="bottom" constant="30" id="b6k-hc-Dcv"/>
+                            <constraint firstItem="D3g-M2-QJ2" firstAttribute="leading" secondItem="VNK-B7-f0h" secondAttribute="trailing" constant="15" id="dvk-ea-rGi"/>
+                            <constraint firstItem="4QC-xP-omE" firstAttribute="leading" secondItem="VNK-B7-f0h" secondAttribute="trailing" constant="8" id="emh-db-jpj"/>
+                            <constraint firstAttribute="trailing" secondItem="38f-o6-RIx" secondAttribute="trailing" constant="20" id="fgk-mh-JHI"/>
+                            <constraint firstItem="gbY-Qb-jAj" firstAttribute="leading" secondItem="VNK-B7-f0h" secondAttribute="trailing" constant="15" id="l75-w5-p2b"/>
+                            <constraint firstItem="Vm6-XN-cZV" firstAttribute="bottom" secondItem="VNK-B7-f0h" secondAttribute="bottom" id="lbJ-ab-9ku"/>
+                            <constraint firstAttribute="bottom" secondItem="0QZ-Dg-t5n" secondAttribute="bottom" id="o1B-3b-mBQ"/>
+                            <constraint firstItem="0QZ-Dg-t5n" firstAttribute="top" secondItem="Vm6-XN-cZV" secondAttribute="bottom" id="pgx-Qo-05F"/>
+                            <constraint firstItem="gbY-Qb-jAj" firstAttribute="top" secondItem="D3g-M2-QJ2" secondAttribute="bottom" constant="5" id="pqy-Zm-KTi"/>
+                            <constraint firstItem="Vm6-XN-cZV" firstAttribute="leading" secondItem="VNK-B7-f0h" secondAttribute="trailing" constant="5" id="rHW-Bw-OiN"/>
+                            <constraint firstItem="38f-o6-RIx" firstAttribute="leading" secondItem="D3g-M2-QJ2" secondAttribute="trailing" constant="15" id="rbX-dI-pSh"/>
+                            <constraint firstAttribute="trailing" secondItem="Y4d-jw-nl3" secondAttribute="trailing" constant="6" id="sv6-cQ-QYA"/>
+                            <constraint firstItem="VNK-B7-f0h" firstAttribute="top" secondItem="jgI-Ja-z4a" secondAttribute="top" constant="10" id="zdt-Zb-xJ6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jgI-Ja-z4a" secondAttribute="trailing" constant="7" id="et3-iT-ycO"/>
+                    <constraint firstItem="jgI-Ja-z4a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="hiN-9F-Ixk"/>
+                    <constraint firstItem="jgI-Ja-z4a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="jbY-kl-Tam"/>
+                    <constraint firstAttribute="bottom" secondItem="jgI-Ja-z4a" secondAttribute="bottom" constant="3" id="uTJ-J3-q3S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="clubBackgroundView" destination="jgI-Ja-z4a" id="yl0-NW-UYp"/>
+                <outlet property="clubDynamicBackView" destination="gbY-Qb-jAj" id="rat-j5-XrM"/>
+                <outlet property="clubDynamicConstraint" destination="rzt-WZ-rYk" id="3ls-25-7iG"/>
+                <outlet property="clubDynamicFrontView" destination="tFf-ok-515" id="5vZ-bB-qek"/>
+                <outlet property="clubDynamicLabel" destination="4QC-xP-omE" id="b6G-11-uZm"/>
+                <outlet property="clubDynamicValueLabel" destination="Y4d-jw-nl3" id="VH6-Em-SbQ"/>
+                <outlet property="clubEventImageView" destination="38f-o6-RIx" id="kmS-nq-Njv"/>
+                <outlet property="clubImageView" destination="VNK-B7-f0h" id="5G6-7O-ox8"/>
+                <outlet property="clubLineView" destination="Vm6-XN-cZV" id="Hdt-dU-0WS"/>
+                <outlet property="clubMembersButton" destination="znX-48-smd" id="1TV-v6-hAa"/>
+                <outlet property="clubNameLabel" destination="D3g-M2-QJ2" id="aC9-ku-lsM"/>
+                <outlet property="clubSportsPageButton" destination="rOS-Ob-BJA" id="W19-EO-cRU"/>
+            </connections>
+            <point key="canvasLocation" x="-154.5" y="-179"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="club_members" width="25" height="25"/>
+        <image name="club_sportsPage" width="25" height="25"/>
+    </resources>
+</document>

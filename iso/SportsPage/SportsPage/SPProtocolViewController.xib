@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPProtocolViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKb-IP-E6v">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="VXh-sw-ybE"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动页服务协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOU-hD-zfG">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUu-Qn-ly6">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="返回"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="DvR-ha-xCb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UUu-Qn-ly6" firstAttribute="centerY" secondItem="OKb-IP-E6v" secondAttribute="centerY" constant="8" id="0H3-gu-dZe"/>
+                        <constraint firstItem="vOU-hD-zfG" firstAttribute="centerY" secondItem="OKb-IP-E6v" secondAttribute="centerY" constant="8" id="27G-Tr-qy8"/>
+                        <constraint firstAttribute="trailing" secondItem="VXh-sw-ybE" secondAttribute="trailing" id="2e9-LU-TQl"/>
+                        <constraint firstAttribute="height" constant="64" id="8qr-HA-ppQ"/>
+                        <constraint firstAttribute="bottom" secondItem="VXh-sw-ybE" secondAttribute="bottom" id="HdM-lM-3ES"/>
+                        <constraint firstItem="vOU-hD-zfG" firstAttribute="centerX" secondItem="OKb-IP-E6v" secondAttribute="centerX" id="I4m-N8-QTA"/>
+                        <constraint firstItem="VXh-sw-ybE" firstAttribute="top" secondItem="OKb-IP-E6v" secondAttribute="top" id="PxD-6U-wfL"/>
+                        <constraint firstAttribute="trailing" secondItem="UUu-Qn-ly6" secondAttribute="trailing" constant="10" id="SLx-FP-fot"/>
+                        <constraint firstItem="VXh-sw-ybE" firstAttribute="leading" secondItem="OKb-IP-E6v" secondAttribute="leading" id="eMU-aa-ayc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OKb-IP-E6v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4Iw-9c-8cf"/>
+                <constraint firstAttribute="trailing" secondItem="OKb-IP-E6v" secondAttribute="trailing" id="84F-eY-aiw"/>
+                <constraint firstItem="OKb-IP-E6v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ec6-iL-gZi"/>
+            </constraints>
+            <point key="canvasLocation" x="-115" y="81"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

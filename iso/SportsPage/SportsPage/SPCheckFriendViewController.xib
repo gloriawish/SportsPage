@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPCheckFriendViewController">
+            <connections>
+                <outlet property="tableView" destination="joA-Xh-Bt3" id="aZu-J8-ogi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="joA-Xh-Bt3">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="joA-Xh-Bt3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5mu-uj-btX"/>
+                <constraint firstAttribute="trailing" secondItem="joA-Xh-Bt3" secondAttribute="trailing" id="Da2-7k-V1m"/>
+                <constraint firstItem="joA-Xh-Bt3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NJZ-fb-8Tg"/>
+                <constraint firstAttribute="bottom" secondItem="joA-Xh-Bt3" secondAttribute="bottom" id="QGN-Uy-Ite"/>
+            </constraints>
+            <point key="canvasLocation" x="244" y="143"/>
+        </view>
+    </objects>
+</document>

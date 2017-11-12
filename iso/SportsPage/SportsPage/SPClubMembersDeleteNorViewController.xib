@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPClubMembersDeleteNorViewController">
+            <connections>
+                <outlet property="deleteMembersButton" destination="gsV-iP-Nw8" id="Zha-ES-Nfo"/>
+                <outlet property="tableView" destination="qaZ-TL-0bd" id="b9v-ZM-kst"/>
+                <outlet property="view" destination="gqK-oR-dfC" id="r8D-vp-fXV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="gqK-oR-dfC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWt-Um-xye">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="C3M-qD-wB0"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="删除成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75h-Db-vcq">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygq-Wr-UbW">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="H8n-d7-Wz9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="C3M-qD-wB0" firstAttribute="top" secondItem="gWt-Um-xye" secondAttribute="top" id="BbN-0W-7hQ"/>
+                        <constraint firstAttribute="height" constant="64" id="Q68-h4-zhY"/>
+                        <constraint firstItem="75h-Db-vcq" firstAttribute="centerY" secondItem="gWt-Um-xye" secondAttribute="centerY" constant="8" id="TG2-i8-siB"/>
+                        <constraint firstAttribute="bottom" secondItem="C3M-qD-wB0" secondAttribute="bottom" id="YbB-Rg-dwB"/>
+                        <constraint firstItem="ygq-Wr-UbW" firstAttribute="centerY" secondItem="gWt-Um-xye" secondAttribute="centerY" constant="8" id="kq6-um-PLE"/>
+                        <constraint firstItem="C3M-qD-wB0" firstAttribute="leading" secondItem="gWt-Um-xye" secondAttribute="leading" id="lJX-1o-0H4"/>
+                        <constraint firstAttribute="trailing" secondItem="C3M-qD-wB0" secondAttribute="trailing" id="ttI-Py-eki"/>
+                        <constraint firstItem="75h-Db-vcq" firstAttribute="centerX" secondItem="gWt-Um-xye" secondAttribute="centerX" id="uJZ-Dc-HHj"/>
+                        <constraint firstAttribute="trailing" secondItem="ygq-Wr-UbW" secondAttribute="trailing" constant="15" id="wae-Kc-4Vb"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qaZ-TL-0bd">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsV-iP-Nw8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="YHE-00-d5n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确认删除"/>
+                    <connections>
+                        <action selector="deleteMembersAction:" destination="-1" eventType="touchUpInside" id="GSQ-6R-HRv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gsV-iP-Nw8" firstAttribute="leading" secondItem="gqK-oR-dfC" secondAttribute="leading" constant="31" id="1Eq-Zw-r0i"/>
+                <constraint firstAttribute="bottom" secondItem="gsV-iP-Nw8" secondAttribute="bottom" constant="25" id="1j1-Kq-Avu"/>
+                <constraint firstAttribute="trailing" secondItem="qaZ-TL-0bd" secondAttribute="trailing" id="5zo-Dx-u0w"/>
+                <constraint firstAttribute="trailing" secondItem="gWt-Um-xye" secondAttribute="trailing" id="BpW-ve-kiR"/>
+                <constraint firstAttribute="bottom" secondItem="qaZ-TL-0bd" secondAttribute="bottom" id="D9j-gK-aDK"/>
+                <constraint firstAttribute="trailing" secondItem="gsV-iP-Nw8" secondAttribute="trailing" constant="31" id="aX1-xy-yt8"/>
+                <constraint firstItem="gWt-Um-xye" firstAttribute="top" secondItem="gqK-oR-dfC" secondAttribute="top" id="b1A-SS-wOY"/>
+                <constraint firstItem="qaZ-TL-0bd" firstAttribute="leading" secondItem="gqK-oR-dfC" secondAttribute="leading" id="coY-qi-VlV"/>
+                <constraint firstItem="gWt-Um-xye" firstAttribute="leading" secondItem="gqK-oR-dfC" secondAttribute="leading" id="oNV-Z7-02q"/>
+                <constraint firstItem="qaZ-TL-0bd" firstAttribute="top" secondItem="gWt-Um-xye" secondAttribute="bottom" id="wGK-pH-d3C"/>
+            </constraints>
+            <point key="canvasLocation" x="-276" y="95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

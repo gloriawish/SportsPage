@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPCreateEventView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhq-aN-Qry">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_create_viewBG" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-L8-kFl">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="360" id="wOg-Rl-sh5"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="wOg-Rl-sh5"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggB-BG-h7B">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ggB-BG-h7B" secondAttribute="height" multiplier="1:1" id="qSh-sr-xdw"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_badminton"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="gse-ws-HnK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJA-Yc-pEi">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JJA-Yc-pEi" secondAttribute="height" multiplier="1:1" id="M9b-V7-CTQ"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_football"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6Zj-vg-COW"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpg-dF-v1i">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lpg-dF-v1i" secondAttribute="height" multiplier="1:1" id="pNo-2B-WOB"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_basketball"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="G4O-Ww-Bfo"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ1-gL-v7S">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wQ1-gL-v7S" secondAttribute="height" multiplier="1:1" id="Fu4-pW-j1e"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_teinnis"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9kg-va-Cq3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8F-pD-LH1">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="q8F-pD-LH1" secondAttribute="height" multiplier="1:1" id="vUe-NB-ce7"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_jogging"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ig4-uU-h0i"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUX-af-bCQ">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="uUX-af-bCQ" secondAttribute="height" multiplier="1:1" id="Vik-Fz-OA1"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_swimming"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="DbH-SU-Arz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmY-SW-HdX">
+                            <state key="normal" backgroundImage="Sports_create_squash"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hfj-X4-Az2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08u-77-r85">
+                            <state key="normal" backgroundImage="Sports_create_kayak"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yi0-iT-dTz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnO-5O-Fof">
+                            <state key="normal" backgroundImage="Sports_create_pingpang"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="WSv-Hf-1W8"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cb-WJ-ntv" userLabel="LineView">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="eP7-Q4-jFg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2s-m8-4jd" userLabel="LineView">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Pc5-OP-4Lc"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNj-Jw-C0d">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="9De-kK-k9d"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="自定义"/>
+                            <connections>
+                                <action selector="customButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="b5h-sh-Zt5"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="或" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKL-WI-sEH" userLabel="OrLabel">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="2Iw-bb-OyU"/>
+                                <constraint firstAttribute="width" constant="17" id="cdy-nr-TrV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuR-JA-yaB">
+                            <state key="normal" backgroundImage="Sports_create_baseball"/>
+                            <connections>
+                                <action selector="selectedButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="HrN-qx-CiV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e94-Qm-Zb1">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="H3F-nB-dtM"/>
+                                <constraint firstAttribute="width" constant="20" id="lfP-Iy-2xg"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="Sports_create_exit"/>
+                            <connections>
+                                <action selector="exitButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="qx7-Qc-V2p"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="uUX-af-bCQ" firstAttribute="leading" secondItem="fhq-aN-Qry" secondAttribute="leading" constant="27" id="0xx-CO-SqY"/>
+                        <constraint firstItem="ggB-BG-h7B" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="50" id="2U0-tT-XsE"/>
+                        <constraint firstItem="2Cb-WJ-ntv" firstAttribute="leading" secondItem="fhq-aN-Qry" secondAttribute="leading" constant="25" id="3Jx-eD-U8F"/>
+                        <constraint firstItem="08u-77-r85" firstAttribute="height" secondItem="uUX-af-bCQ" secondAttribute="height" id="3Ok-gd-Gre"/>
+                        <constraint firstItem="wQ1-gL-v7S" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="50" id="5Ic-jK-T5C"/>
+                        <constraint firstItem="IKL-WI-sEH" firstAttribute="centerY" secondItem="2Cb-WJ-ntv" secondAttribute="centerY" id="7vS-j0-J3z"/>
+                        <constraint firstItem="VmY-SW-HdX" firstAttribute="top" secondItem="uUX-af-bCQ" secondAttribute="top" id="9FV-gJ-0fM"/>
+                        <constraint firstItem="JJA-Yc-pEi" firstAttribute="width" secondItem="ggB-BG-h7B" secondAttribute="width" id="Azm-iE-1hc"/>
+                        <constraint firstItem="VmY-SW-HdX" firstAttribute="height" secondItem="uUX-af-bCQ" secondAttribute="height" id="Bd7-dg-Isa"/>
+                        <constraint firstItem="wQ1-gL-v7S" firstAttribute="leading" secondItem="lpg-dF-v1i" secondAttribute="trailing" constant="13" id="G1W-dP-0rW"/>
+                        <constraint firstItem="08u-77-r85" firstAttribute="top" secondItem="uUX-af-bCQ" secondAttribute="top" id="GXx-kC-CxW"/>
+                        <constraint firstAttribute="trailing" secondItem="H2s-m8-4jd" secondAttribute="trailing" constant="25" id="GYb-Ny-gD9"/>
+                        <constraint firstItem="JJA-Yc-pEi" firstAttribute="leading" secondItem="ggB-BG-h7B" secondAttribute="trailing" constant="13" id="Gpg-6p-IBm"/>
+                        <constraint firstItem="uKL-L8-kFl" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" id="GyU-uW-AC0"/>
+                        <constraint firstItem="KuR-JA-yaB" firstAttribute="width" secondItem="uUX-af-bCQ" secondAttribute="width" id="IpW-nN-4yf"/>
+                        <constraint firstItem="lpg-dF-v1i" firstAttribute="width" secondItem="ggB-BG-h7B" secondAttribute="width" id="K6f-Cy-C3b"/>
+                        <constraint firstItem="hNj-Jw-C0d" firstAttribute="top" secondItem="H2s-m8-4jd" secondAttribute="bottom" constant="25" id="LXl-NA-l9H"/>
+                        <constraint firstItem="lpg-dF-v1i" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="50" id="NEi-XL-5HL"/>
+                        <constraint firstItem="H2s-m8-4jd" firstAttribute="leading" secondItem="IKL-WI-sEH" secondAttribute="trailing" constant="30" id="Nih-2p-jxI"/>
+                        <constraint firstItem="uKL-L8-kFl" firstAttribute="leading" secondItem="fhq-aN-Qry" secondAttribute="leading" id="SDz-Fm-hmY"/>
+                        <constraint firstItem="JJA-Yc-pEi" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="50" id="T46-86-oAt"/>
+                        <constraint firstItem="ggB-BG-h7B" firstAttribute="leading" secondItem="fhq-aN-Qry" secondAttribute="leading" constant="27" id="Wdy-A1-GyH"/>
+                        <constraint firstItem="e94-Qm-Zb1" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="10" id="Wez-xl-B9J"/>
+                        <constraint firstItem="TnO-5O-Fof" firstAttribute="height" secondItem="uUX-af-bCQ" secondAttribute="height" id="WuR-cz-M2o"/>
+                        <constraint firstItem="TnO-5O-Fof" firstAttribute="leading" secondItem="KuR-JA-yaB" secondAttribute="trailing" constant="13" id="Yjh-yM-xlk"/>
+                        <constraint firstAttribute="trailing" secondItem="uKL-L8-kFl" secondAttribute="trailing" id="ZXK-ud-JdA"/>
+                        <constraint firstAttribute="bottom" secondItem="hNj-Jw-C0d" secondAttribute="bottom" constant="45" id="aYQ-XG-G3f"/>
+                        <constraint firstItem="hNj-Jw-C0d" firstAttribute="top" secondItem="2Cb-WJ-ntv" secondAttribute="bottom" constant="25" id="abz-nA-YAJ"/>
+                        <constraint firstItem="VmY-SW-HdX" firstAttribute="width" secondItem="uUX-af-bCQ" secondAttribute="width" id="bCY-IM-cI0"/>
+                        <constraint firstAttribute="trailing" secondItem="q8F-pD-LH1" secondAttribute="trailing" constant="27" id="c5a-6a-z1E"/>
+                        <constraint firstItem="lpg-dF-v1i" firstAttribute="leading" secondItem="JJA-Yc-pEi" secondAttribute="trailing" constant="13" id="caP-hK-cW8"/>
+                        <constraint firstItem="q8F-pD-LH1" firstAttribute="leading" secondItem="wQ1-gL-v7S" secondAttribute="trailing" constant="13" id="ce3-xI-IR9"/>
+                        <constraint firstItem="q8F-pD-LH1" firstAttribute="top" secondItem="fhq-aN-Qry" secondAttribute="top" constant="50" id="cpA-A4-fyb"/>
+                        <constraint firstItem="08u-77-r85" firstAttribute="width" secondItem="uUX-af-bCQ" secondAttribute="width" id="dOI-c1-3ER"/>
+                        <constraint firstItem="TnO-5O-Fof" firstAttribute="width" secondItem="uUX-af-bCQ" secondAttribute="width" id="eBq-2X-BzZ"/>
+                        <constraint firstItem="TnO-5O-Fof" firstAttribute="top" secondItem="uUX-af-bCQ" secondAttribute="top" id="ebE-Pu-w8m"/>
+                        <constraint firstAttribute="trailing" secondItem="e94-Qm-Zb1" secondAttribute="trailing" constant="15" id="gHv-pm-ujb"/>
+                        <constraint firstAttribute="trailing" secondItem="hNj-Jw-C0d" secondAttribute="trailing" constant="20" id="ggB-3d-nqO"/>
+                        <constraint firstItem="08u-77-r85" firstAttribute="leading" secondItem="VmY-SW-HdX" secondAttribute="trailing" constant="13" id="hej-5D-uAu"/>
+                        <constraint firstItem="KuR-JA-yaB" firstAttribute="height" secondItem="uUX-af-bCQ" secondAttribute="height" id="iEq-IV-npM"/>
+                        <constraint firstItem="uUX-af-bCQ" firstAttribute="top" secondItem="ggB-BG-h7B" secondAttribute="bottom" constant="13" id="kuu-eJ-ZEX"/>
+                        <constraint firstItem="IKL-WI-sEH" firstAttribute="centerX" secondItem="fhq-aN-Qry" secondAttribute="centerX" id="nkS-YC-JVi"/>
+                        <constraint firstAttribute="trailing" secondItem="TnO-5O-Fof" secondAttribute="trailing" constant="27" id="o5E-d1-11V"/>
+                        <constraint firstItem="q8F-pD-LH1" firstAttribute="width" secondItem="ggB-BG-h7B" secondAttribute="width" id="oKz-lk-iPg"/>
+                        <constraint firstItem="wQ1-gL-v7S" firstAttribute="width" secondItem="ggB-BG-h7B" secondAttribute="width" id="pq1-TX-ZrT"/>
+                        <constraint firstItem="hNj-Jw-C0d" firstAttribute="leading" secondItem="fhq-aN-Qry" secondAttribute="leading" constant="20" id="rB8-Fn-q7O"/>
+                        <constraint firstAttribute="bottom" secondItem="uKL-L8-kFl" secondAttribute="bottom" id="rO5-Yd-fIT"/>
+                        <constraint firstItem="KuR-JA-yaB" firstAttribute="top" secondItem="uUX-af-bCQ" secondAttribute="top" id="uAw-QL-VWy"/>
+                        <constraint firstAttribute="height" constant="360" id="wUg-JG-Vg0"/>
+                        <constraint firstItem="IKL-WI-sEH" firstAttribute="leading" secondItem="2Cb-WJ-ntv" secondAttribute="trailing" constant="30" id="xE0-og-ssY"/>
+                        <constraint firstItem="KuR-JA-yaB" firstAttribute="leading" secondItem="08u-77-r85" secondAttribute="trailing" constant="13" id="y7l-Mv-BiI"/>
+                        <constraint firstItem="VmY-SW-HdX" firstAttribute="leading" secondItem="uUX-af-bCQ" secondAttribute="trailing" constant="13" id="zqD-Dp-sFA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fhq-aN-Qry" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EGD-0O-Syj"/>
+                <constraint firstItem="fhq-aN-Qry" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Mcl-Vh-0SZ"/>
+                <constraint firstAttribute="trailing" secondItem="fhq-aN-Qry" secondAttribute="trailing" constant="10" id="QCg-LD-Xg1"/>
+                <constraint firstItem="fhq-aN-Qry" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ccH-2F-TTG"/>
+                <constraint firstItem="fhq-aN-Qry" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wDX-VV-OWr"/>
+                <constraint firstAttribute="trailing" secondItem="fhq-aN-Qry" secondAttribute="trailing" constant="10" id="z7o-Di-m6E"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ccH-2F-TTG"/>
+                    <exclude reference="z7o-Di-m6E"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="badmintonButton" destination="ggB-BG-h7B" id="EKm-wQ-uZo"/>
+                <outlet property="baseballButton" destination="KuR-JA-yaB" id="tio-IF-ksX"/>
+                <outlet property="basketballButton" destination="lpg-dF-v1i" id="bmM-ir-xh6"/>
+                <outlet property="customButton" destination="hNj-Jw-C0d" id="FS5-2h-Bmh"/>
+                <outlet property="footballButton" destination="JJA-Yc-pEi" id="HGj-6T-Iag"/>
+                <outlet property="joggingButton" destination="q8F-pD-LH1" id="rQo-Md-IMW"/>
+                <outlet property="kayakButton" destination="08u-77-r85" id="txD-sT-IUp"/>
+                <outlet property="pingpangButton" destination="TnO-5O-Fof" id="ert-uA-879"/>
+                <outlet property="selectedEventView" destination="fhq-aN-Qry" id="fQ0-DJ-YJv"/>
+                <outlet property="squashButton" destination="VmY-SW-HdX" id="XNX-Pd-sWc"/>
+                <outlet property="swimmingButton" destination="uUX-af-bCQ" id="Kug-mR-kD7"/>
+                <outlet property="tennisButton" destination="wQ1-gL-v7S" id="vbJ-ib-Xua"/>
+            </connections>
+            <point key="canvasLocation" x="-280.5" y="-143.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sports_create_badminton" width="50" height="50"/>
+        <image name="Sports_create_baseball" width="50" height="50"/>
+        <image name="Sports_create_basketball" width="50" height="50"/>
+        <image name="Sports_create_exit" width="20" height="20"/>
+        <image name="Sports_create_football" width="50" height="50"/>
+        <image name="Sports_create_jogging" width="50" height="50"/>
+        <image name="Sports_create_kayak" width="50" height="50"/>
+        <image name="Sports_create_pingpang" width="50" height="50"/>
+        <image name="Sports_create_squash" width="50" height="50"/>
+        <image name="Sports_create_swimming" width="50" height="50"/>
+        <image name="Sports_create_teinnis" width="50" height="50"/>
+        <image name="Sports_create_viewBG" width="355" height="350"/>
+    </resources>
+</document>

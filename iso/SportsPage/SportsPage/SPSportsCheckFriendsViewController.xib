@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSportsCheckFriendsViewController">
+            <connections>
+                <outlet property="tableView" destination="Sxl-i0-lJw" id="1xq-Ox-TQK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJo-Jb-YB8">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="Awj-KP-6rg"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="资料查看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeB-wd-zZW">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Mk-df-Cbs">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="jgs-tO-6F5"/>
+                                <constraint firstAttribute="height" constant="25" id="vok-RN-8a4"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="o4k-k7-omZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1JT-av-Lw1"/>
+                        <constraint firstItem="2Mk-df-Cbs" firstAttribute="centerY" secondItem="lJo-Jb-YB8" secondAttribute="centerY" constant="8" id="BLO-i2-5Ii"/>
+                        <constraint firstItem="2Mk-df-Cbs" firstAttribute="leading" secondItem="lJo-Jb-YB8" secondAttribute="leading" id="Dby-rX-36y"/>
+                        <constraint firstAttribute="bottom" secondItem="Awj-KP-6rg" secondAttribute="bottom" id="Dhk-7d-mfu"/>
+                        <constraint firstItem="Awj-KP-6rg" firstAttribute="leading" secondItem="lJo-Jb-YB8" secondAttribute="leading" id="Njm-Cq-13p"/>
+                        <constraint firstItem="Awj-KP-6rg" firstAttribute="top" secondItem="lJo-Jb-YB8" secondAttribute="top" id="cjX-1l-zyW"/>
+                        <constraint firstItem="qeB-wd-zZW" firstAttribute="centerY" secondItem="lJo-Jb-YB8" secondAttribute="centerY" constant="8" id="dWB-Ob-n2q"/>
+                        <constraint firstAttribute="trailing" secondItem="Awj-KP-6rg" secondAttribute="trailing" id="hXg-lZ-1YI"/>
+                        <constraint firstItem="qeB-wd-zZW" firstAttribute="centerX" secondItem="lJo-Jb-YB8" secondAttribute="centerX" id="sF5-Iu-3jy"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sxl-i0-lJw">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lJo-Jb-YB8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eew-JG-YGY"/>
+                <constraint firstAttribute="trailing" secondItem="lJo-Jb-YB8" secondAttribute="trailing" id="Ljg-h4-vqi"/>
+                <constraint firstAttribute="bottom" secondItem="Sxl-i0-lJw" secondAttribute="bottom" id="h0Y-RT-A7e"/>
+                <constraint firstAttribute="trailing" secondItem="Sxl-i0-lJw" secondAttribute="trailing" id="heL-72-VQ5"/>
+                <constraint firstItem="Sxl-i0-lJw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ip1-a9-dFs"/>
+                <constraint firstItem="lJo-Jb-YB8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="n58-Rx-rKg"/>
+                <constraint firstItem="Sxl-i0-lJw" firstAttribute="top" secondItem="lJo-Jb-YB8" secondAttribute="bottom" id="rYL-75-gaE"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

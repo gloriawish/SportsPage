@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPClubMembersAddNorViewController">
+            <connections>
+                <outlet property="addMembersButton" destination="JRL-i0-r6a" id="8Eq-3e-fSw"/>
+                <outlet property="tableView" destination="P5b-mf-ALj" id="G0F-CJ-5Mq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZS-lf-xPB">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="kDr-r6-5CT"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="添加成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXg-6M-hhT">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsu-S4-iZK">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消"/>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="Rbn-3o-jgX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zXg-6M-hhT" firstAttribute="centerX" secondItem="5ZS-lf-xPB" secondAttribute="centerX" id="7no-Ts-pTR"/>
+                        <constraint firstAttribute="height" constant="64" id="Bfq-5b-mUU"/>
+                        <constraint firstAttribute="trailing" secondItem="kDr-r6-5CT" secondAttribute="trailing" id="NZ2-b0-Esq"/>
+                        <constraint firstItem="tsu-S4-iZK" firstAttribute="centerY" secondItem="5ZS-lf-xPB" secondAttribute="centerY" constant="8" id="Um9-2B-6hi"/>
+                        <constraint firstAttribute="trailing" secondItem="tsu-S4-iZK" secondAttribute="trailing" constant="15" id="V3Z-5g-eq7"/>
+                        <constraint firstItem="zXg-6M-hhT" firstAttribute="centerY" secondItem="5ZS-lf-xPB" secondAttribute="centerY" constant="8" id="X1H-ZV-UDe"/>
+                        <constraint firstItem="kDr-r6-5CT" firstAttribute="leading" secondItem="5ZS-lf-xPB" secondAttribute="leading" id="ahs-mh-dBM"/>
+                        <constraint firstAttribute="bottom" secondItem="kDr-r6-5CT" secondAttribute="bottom" id="dN9-yt-xm2"/>
+                        <constraint firstItem="kDr-r6-5CT" firstAttribute="top" secondItem="5ZS-lf-xPB" secondAttribute="top" id="zfO-n3-ZkN"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P5b-mf-ALj">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-i0-r6a">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0qA-cM-09f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="确认添加"/>
+                    <connections>
+                        <action selector="addMembersAction:" destination="-1" eventType="touchUpInside" id="vk5-yM-EXM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P5b-mf-ALj" firstAttribute="top" secondItem="5ZS-lf-xPB" secondAttribute="bottom" id="CfJ-Jb-AsY"/>
+                <constraint firstAttribute="trailing" secondItem="5ZS-lf-xPB" secondAttribute="trailing" id="CnJ-GM-6iR"/>
+                <constraint firstAttribute="trailing" secondItem="P5b-mf-ALj" secondAttribute="trailing" id="Nuu-AX-hTk"/>
+                <constraint firstItem="P5b-mf-ALj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QRR-Ga-tee"/>
+                <constraint firstItem="5ZS-lf-xPB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d8S-7t-D6V"/>
+                <constraint firstAttribute="bottom" secondItem="P5b-mf-ALj" secondAttribute="bottom" id="dHd-bD-M1q"/>
+                <constraint firstItem="JRL-i0-r6a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="31" id="ifB-eD-hPY"/>
+                <constraint firstAttribute="trailing" secondItem="JRL-i0-r6a" secondAttribute="trailing" constant="31" id="tQz-hE-e74"/>
+                <constraint firstItem="5ZS-lf-xPB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uLu-J9-J95"/>
+                <constraint firstAttribute="bottom" secondItem="JRL-i0-r6a" secondAttribute="bottom" constant="25" id="y3t-Ug-wdE"/>
+            </constraints>
+            <point key="canvasLocation" x="-226" y="-37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSportsShareViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-ww-M7N">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-yv-OSf"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到运动页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWz-qj-N6k">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6T-XF-SkS">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="qpn-K5-nUj"/>
+                                <constraint firstAttribute="width" constant="50" id="xgy-uA-RBL"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="4ae-h5-cfe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hWz-qj-N6k" firstAttribute="centerX" secondItem="bZC-ww-M7N" secondAttribute="centerX" id="0WF-fI-eFy"/>
+                        <constraint firstItem="hWz-qj-N6k" firstAttribute="centerY" secondItem="bZC-ww-M7N" secondAttribute="centerY" constant="8" id="209-gJ-vi1"/>
+                        <constraint firstItem="O9y-yv-OSf" firstAttribute="leading" secondItem="bZC-ww-M7N" secondAttribute="leading" id="Ijh-8J-G3g"/>
+                        <constraint firstItem="m6T-XF-SkS" firstAttribute="leading" secondItem="bZC-ww-M7N" secondAttribute="leading" id="PYd-DU-hYc"/>
+                        <constraint firstItem="m6T-XF-SkS" firstAttribute="centerY" secondItem="bZC-ww-M7N" secondAttribute="centerY" constant="8" id="QCb-H9-Ejc"/>
+                        <constraint firstAttribute="trailing" secondItem="O9y-yv-OSf" secondAttribute="trailing" id="WKJ-rl-NKf"/>
+                        <constraint firstItem="O9y-yv-OSf" firstAttribute="top" secondItem="bZC-ww-M7N" secondAttribute="top" id="hwK-sc-nLj"/>
+                        <constraint firstAttribute="bottom" secondItem="O9y-yv-OSf" secondAttribute="bottom" id="mjt-uh-heK"/>
+                        <constraint firstAttribute="height" constant="64" id="nsm-By-dxx"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bZC-ww-M7N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EId-29-wLi"/>
+                <constraint firstItem="bZC-ww-M7N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dtr-J7-9Pi"/>
+                <constraint firstAttribute="trailing" secondItem="bZC-ww-M7N" secondAttribute="trailing" id="rBI-iw-Gev"/>
+            </constraints>
+            <point key="canvasLocation" x="-493" y="-70"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

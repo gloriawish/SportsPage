@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPPersonalInfoViewController">
+            <connections>
+                <outlet property="tableView" destination="IIX-dK-pBc" id="jcA-6o-s4J"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-yg-DMg" userLabel="NavView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-YM-fbw"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1R-47-Q9W">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-hw-50k">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="KDX-4w-058"/>
+                                <constraint firstAttribute="height" constant="25" id="UD5-o7-MUj"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="P1y-Va-Ocr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ed2-YM-fbw" secondAttribute="trailing" id="8yu-3f-v79"/>
+                        <constraint firstItem="zPb-hw-50k" firstAttribute="centerY" secondItem="Lap-yg-DMg" secondAttribute="centerY" constant="8" id="EDa-3A-AlP"/>
+                        <constraint firstAttribute="height" constant="64" id="GYh-yp-4G2"/>
+                        <constraint firstItem="zPb-hw-50k" firstAttribute="leading" secondItem="Lap-yg-DMg" secondAttribute="leading" id="Jqz-x2-JCk"/>
+                        <constraint firstItem="B1R-47-Q9W" firstAttribute="centerY" secondItem="Lap-yg-DMg" secondAttribute="centerY" constant="8" id="L0K-ph-MrA"/>
+                        <constraint firstItem="B1R-47-Q9W" firstAttribute="centerX" secondItem="Lap-yg-DMg" secondAttribute="centerX" id="TBY-cc-ym6"/>
+                        <constraint firstItem="ed2-YM-fbw" firstAttribute="top" secondItem="Lap-yg-DMg" secondAttribute="top" id="gCj-pl-uFW"/>
+                        <constraint firstAttribute="bottom" secondItem="ed2-YM-fbw" secondAttribute="bottom" id="ndK-sp-h9L"/>
+                        <constraint firstItem="ed2-YM-fbw" firstAttribute="leading" secondItem="Lap-yg-DMg" secondAttribute="leading" id="yjT-12-FfX"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IIX-dK-pBc">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IIX-dK-pBc" secondAttribute="trailing" id="F7g-s0-srI"/>
+                <constraint firstAttribute="trailing" secondItem="Lap-yg-DMg" secondAttribute="trailing" id="FSX-KS-6y9"/>
+                <constraint firstItem="Lap-yg-DMg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aqg-tE-U1Z"/>
+                <constraint firstItem="IIX-dK-pBc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dWn-ht-kR2"/>
+                <constraint firstItem="Lap-yg-DMg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hOr-Z8-R4b"/>
+                <constraint firstItem="IIX-dK-pBc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jDt-X8-VB8"/>
+                <constraint firstItem="IIX-dK-pBc" firstAttribute="top" secondItem="Lap-yg-DMg" secondAttribute="bottom" id="qB9-rf-MJ6"/>
+                <constraint firstAttribute="bottom" secondItem="IIX-dK-pBc" secondAttribute="bottom" id="xn7-CF-ZcS"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="jDt-X8-VB8"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-1334" y="275"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

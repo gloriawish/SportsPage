@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPCreateNextStepViewController">
+            <connections>
+                <outlet property="jumpToActiveButton" destination="Qrv-Q5-Xrm" id="tJ9-Lc-fwP"/>
+                <outlet property="tableView" destination="QMB-SQ-Hcf" id="vwh-E0-XN2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QMB-SQ-Hcf">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ7-ch-DXT">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="tSO-oa-xfg"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-o9-ETp">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="bx6-5s-Sqc"/>
+                                <constraint firstAttribute="height" constant="25" id="mHB-04-ePE"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="BPm-ru-FWw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrv-Q5-Xrm">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="跳过"/>
+                            <connections>
+                                <action selector="turnToMainAction" destination="-1" eventType="touchUpInside" id="ZOS-fl-if9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qrv-Q5-Xrm" secondAttribute="trailing" constant="15" id="3US-Ug-Tvm"/>
+                        <constraint firstItem="NwV-o9-ETp" firstAttribute="centerY" secondItem="bZ7-ch-DXT" secondAttribute="centerY" constant="8" id="9mi-9B-lqt"/>
+                        <constraint firstAttribute="bottom" secondItem="tSO-oa-xfg" secondAttribute="bottom" id="GTv-LM-TEk"/>
+                        <constraint firstItem="tSO-oa-xfg" firstAttribute="leading" secondItem="bZ7-ch-DXT" secondAttribute="leading" id="Mxz-aH-9TT"/>
+                        <constraint firstAttribute="height" constant="64" id="P9t-Yu-qyN"/>
+                        <constraint firstAttribute="trailing" secondItem="tSO-oa-xfg" secondAttribute="trailing" id="Rcw-Iu-x6y"/>
+                        <constraint firstItem="Qrv-Q5-Xrm" firstAttribute="centerY" secondItem="bZ7-ch-DXT" secondAttribute="centerY" constant="8" id="f3F-YD-oJI"/>
+                        <constraint firstItem="tSO-oa-xfg" firstAttribute="top" secondItem="bZ7-ch-DXT" secondAttribute="top" id="ggg-iZ-LjX"/>
+                        <constraint firstItem="NwV-o9-ETp" firstAttribute="leading" secondItem="bZ7-ch-DXT" secondAttribute="leading" id="x2m-gZ-mOu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QMB-SQ-Hcf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6WZ-CD-5vh"/>
+                <constraint firstAttribute="trailing" secondItem="bZ7-ch-DXT" secondAttribute="trailing" id="KCP-03-QCE"/>
+                <constraint firstItem="bZ7-ch-DXT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QGJ-aR-xsa"/>
+                <constraint firstItem="QMB-SQ-Hcf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Qob-xy-6nD"/>
+                <constraint firstAttribute="trailing" secondItem="QMB-SQ-Hcf" secondAttribute="trailing" id="aXJ-9i-DZ6"/>
+                <constraint firstItem="bZ7-ch-DXT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tVp-hZ-mIQ"/>
+                <constraint firstAttribute="bottom" secondItem="QMB-SQ-Hcf" secondAttribute="bottom" id="tXn-34-YvT"/>
+            </constraints>
+            <point key="canvasLocation" x="-1128" y="253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar" width="375" height="64"/>
+        <image name="navBar_back" width="50" height="25"/>
+    </resources>
+</document>

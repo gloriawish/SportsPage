@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPAddFrendsCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IM_sys_tips" translatesAutoresizingMaskIntoConstraints="NO" id="lKJ-aS-f93">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lKJ-aS-f93" secondAttribute="height" multiplier="1:1" id="a01-wQ-xSZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好友消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Boc-mQ-wm3">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KWd-Gg-6XZ"/>
+                        <constraint firstAttribute="width" constant="169" id="NsS-iJ-NCX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自xxx的消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-db-scV">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxxx-xx-xx xx:xx:xx" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNo-48-aQu">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="nhi-W3-CHD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NmO-db-scV" secondAttribute="bottom" constant="12" id="9xV-kR-tjK"/>
+                <constraint firstItem="zNo-48-aQu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Poo-aa-hDK"/>
+                <constraint firstItem="NmO-db-scV" firstAttribute="top" secondItem="zNo-48-aQu" secondAttribute="bottom" constant="18" id="XV7-hC-9YF"/>
+                <constraint firstAttribute="trailing" secondItem="NmO-db-scV" secondAttribute="trailing" constant="8" id="bDU-BG-Rkx"/>
+                <constraint firstAttribute="bottom" secondItem="lKJ-aS-f93" secondAttribute="bottom" constant="10" id="eRm-JC-dpd"/>
+                <constraint firstItem="zNo-48-aQu" firstAttribute="leading" secondItem="Boc-mQ-wm3" secondAttribute="trailing" constant="8" id="gPF-dH-bse"/>
+                <constraint firstItem="NmO-db-scV" firstAttribute="leading" secondItem="lKJ-aS-f93" secondAttribute="trailing" constant="8" id="htI-Au-Ord"/>
+                <constraint firstItem="lKJ-aS-f93" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="j7o-Qu-MvZ"/>
+                <constraint firstItem="Boc-mQ-wm3" firstAttribute="leading" secondItem="lKJ-aS-f93" secondAttribute="trailing" constant="8" id="kCn-Wb-dZo"/>
+                <constraint firstAttribute="trailing" secondItem="zNo-48-aQu" secondAttribute="trailing" constant="10" id="mIB-S7-UHZ"/>
+                <constraint firstItem="lKJ-aS-f93" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="oxx-Es-cRl"/>
+                <constraint firstItem="Boc-mQ-wm3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="vzh-jV-ZjD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XV7-hC-9YF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="contentLabel" destination="NmO-db-scV" id="Yrm-JN-dBa"/>
+                <outlet property="sysImageView" destination="lKJ-aS-f93" id="D9f-dn-0dE"/>
+                <outlet property="timeLabel" destination="zNo-48-aQu" id="zi6-OZ-psw"/>
+                <outlet property="titleLabel" destination="Boc-mQ-wm3" id="mAV-dt-D8t"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IM_sys_tips" width="50" height="50"/>
+    </resources>
+</document>

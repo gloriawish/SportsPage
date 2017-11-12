@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPPersonalClubJoinWayViewController">
+            <connections>
+                <outlet property="label1" destination="igr-HT-wlQ" id="Hvp-Zf-Zwf"/>
+                <outlet property="label2" destination="JEx-kG-ZZR" id="S9T-kf-cXF"/>
+                <outlet property="lineView1" destination="7Gg-md-EqF" id="KyZ-WN-bBK"/>
+                <outlet property="lineView2" destination="ahV-nd-3XX" id="GtS-4M-Y0S"/>
+                <outlet property="selectedImageView1" destination="BXL-gU-zo0" id="CjS-tU-hzL"/>
+                <outlet property="selectedImageView2" destination="0FA-Jw-p4I" id="aqe-zw-uXk"/>
+                <outlet property="selectedView1" destination="N7l-W9-epr" id="4Bw-OV-9A3"/>
+                <outlet property="selectedView2" destination="9Vn-gl-rQl" id="zZw-Kk-XB5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RV1-EO-GdU">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_black" translatesAutoresizingMaskIntoConstraints="NO" id="wJD-bQ-h1J"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择加入俱乐部方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCs-WM-f6G">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmW-dF-kZ8">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Q3R-zO-1tf"/>
+                                <constraint firstAttribute="height" constant="25" id="RdK-vm-cBu"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="FMA-wY-V8c"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUd-nD-tq8">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="完成"/>
+                            <connections>
+                                <action selector="submitJoinClubWayAction:" destination="-1" eventType="touchUpInside" id="Eil-MQ-cnz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JCs-WM-f6G" firstAttribute="centerX" secondItem="RV1-EO-GdU" secondAttribute="centerX" id="R6q-xS-c7B"/>
+                        <constraint firstItem="wJD-bQ-h1J" firstAttribute="leading" secondItem="RV1-EO-GdU" secondAttribute="leading" id="V4N-1r-0oG"/>
+                        <constraint firstItem="JCs-WM-f6G" firstAttribute="centerY" secondItem="RV1-EO-GdU" secondAttribute="centerY" constant="8" id="VPf-F4-gNI"/>
+                        <constraint firstItem="FUd-nD-tq8" firstAttribute="centerY" secondItem="RV1-EO-GdU" secondAttribute="centerY" constant="8" id="WUP-P9-TWK"/>
+                        <constraint firstAttribute="trailing" secondItem="wJD-bQ-h1J" secondAttribute="trailing" id="dX6-Vm-fo7"/>
+                        <constraint firstAttribute="bottom" secondItem="wJD-bQ-h1J" secondAttribute="bottom" id="f77-9s-aBE"/>
+                        <constraint firstItem="wJD-bQ-h1J" firstAttribute="top" secondItem="RV1-EO-GdU" secondAttribute="top" id="f97-yA-2OX"/>
+                        <constraint firstAttribute="trailing" secondItem="FUd-nD-tq8" secondAttribute="trailing" constant="15" id="fVd-AM-5nj"/>
+                        <constraint firstItem="cmW-dF-kZ8" firstAttribute="leading" secondItem="RV1-EO-GdU" secondAttribute="leading" id="gNH-zK-sdv"/>
+                        <constraint firstAttribute="height" constant="64" id="nIL-7c-LZY"/>
+                        <constraint firstItem="cmW-dF-kZ8" firstAttribute="centerY" secondItem="RV1-EO-GdU" secondAttribute="centerY" constant="8" id="ue8-bT-fhT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-md-EqF">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="VkW-TS-fhh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7l-W9-epr">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahV-nd-3XX">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7ca-kd-OwY"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="允许任何人加入俱乐部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igr-HT-wlQ">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_setting_join_type" translatesAutoresizingMaskIntoConstraints="NO" id="BXL-gU-zo0">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="BXL-gU-zo0" secondAttribute="height" id="SU9-dB-ydj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ahV-nd-3XX" secondAttribute="bottom" id="3zT-c9-4Pb"/>
+                        <constraint firstItem="igr-HT-wlQ" firstAttribute="centerY" secondItem="N7l-W9-epr" secondAttribute="centerY" id="JZA-nF-uDI"/>
+                        <constraint firstAttribute="bottom" secondItem="BXL-gU-zo0" secondAttribute="bottom" constant="10" id="MAN-8J-S7K"/>
+                        <constraint firstAttribute="trailing" secondItem="BXL-gU-zo0" secondAttribute="trailing" constant="15" id="OkT-eB-wMI"/>
+                        <constraint firstAttribute="height" constant="50" id="TDv-RR-a8e"/>
+                        <constraint firstItem="BXL-gU-zo0" firstAttribute="top" secondItem="N7l-W9-epr" secondAttribute="top" constant="10" id="lIY-Up-wkH"/>
+                        <constraint firstAttribute="trailing" secondItem="ahV-nd-3XX" secondAttribute="trailing" constant="10" id="mfH-Ja-3tF"/>
+                        <constraint firstItem="igr-HT-wlQ" firstAttribute="leading" secondItem="N7l-W9-epr" secondAttribute="leading" constant="15" id="qNX-0R-GcS"/>
+                        <constraint firstItem="ahV-nd-3XX" firstAttribute="leading" secondItem="N7l-W9-epr" secondAttribute="leading" constant="10" id="yhK-Fa-XCY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Vn-gl-rQl">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="需要通过管理员验证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEx-kG-ZZR">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="club_setting_join_type" translatesAutoresizingMaskIntoConstraints="NO" id="0FA-Jw-p4I">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="0FA-Jw-p4I" secondAttribute="height" id="fcF-ys-RVv"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JEx-kG-ZZR" firstAttribute="leading" secondItem="9Vn-gl-rQl" secondAttribute="leading" constant="15" id="H5m-2R-3fG"/>
+                        <constraint firstAttribute="bottom" secondItem="0FA-Jw-p4I" secondAttribute="bottom" constant="10" id="Je1-93-DvZ"/>
+                        <constraint firstAttribute="trailing" secondItem="0FA-Jw-p4I" secondAttribute="trailing" constant="15" id="QaE-gj-U7v"/>
+                        <constraint firstItem="0FA-Jw-p4I" firstAttribute="top" secondItem="9Vn-gl-rQl" secondAttribute="top" constant="10" id="U7z-As-YX8"/>
+                        <constraint firstItem="JEx-kG-ZZR" firstAttribute="centerY" secondItem="9Vn-gl-rQl" secondAttribute="centerY" id="kuO-1c-RJm"/>
+                        <constraint firstAttribute="height" constant="50" id="ymg-Sx-qdz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="N7l-W9-epr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1Uy-lJ-t1u"/>
+                <constraint firstItem="7Gg-md-EqF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1fi-EP-ETp"/>
+                <constraint firstItem="RV1-EO-GdU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3gZ-4h-vfW"/>
+                <constraint firstItem="7Gg-md-EqF" firstAttribute="top" secondItem="RV1-EO-GdU" secondAttribute="bottom" id="LZE-v1-Drj"/>
+                <constraint firstItem="9Vn-gl-rQl" firstAttribute="top" secondItem="N7l-W9-epr" secondAttribute="bottom" id="T0S-6H-nqs"/>
+                <constraint firstAttribute="trailing" secondItem="N7l-W9-epr" secondAttribute="trailing" id="Tkv-8P-Iua"/>
+                <constraint firstAttribute="trailing" secondItem="9Vn-gl-rQl" secondAttribute="trailing" id="YA8-x2-igR"/>
+                <constraint firstAttribute="trailing" secondItem="7Gg-md-EqF" secondAttribute="trailing" id="Z5V-rf-rB4"/>
+                <constraint firstItem="9Vn-gl-rQl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dA9-DX-dER"/>
+                <constraint firstItem="N7l-W9-epr" firstAttribute="top" secondItem="7Gg-md-EqF" secondAttribute="bottom" id="s1S-7Z-eYa"/>
+                <constraint firstItem="RV1-EO-GdU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wXH-fk-256"/>
+                <constraint firstAttribute="trailing" secondItem="RV1-EO-GdU" secondAttribute="trailing" id="zSV-Wl-gYo"/>
+            </constraints>
+            <point key="canvasLocation" x="-411" y="-436"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="club_setting_join_type" width="25" height="25"/>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="navBar_black" width="375" height="64"/>
+    </resources>
+</document>

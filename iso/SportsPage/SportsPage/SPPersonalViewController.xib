@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPPersonalViewController">
+            <connections>
+                <outlet property="sysSettingButton" destination="Ug9-Tz-lHt" id="pTg-NM-gwZ"/>
+                <outlet property="tableView" destination="Mij-7O-ces" id="2U9-IZ-kLo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mij-7O-ces">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nGV-cC-GLN" userLabel="NavView">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="3WK-Ba-kcd"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug9-Tz-lHt">
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="设置"/>
+                            <connections>
+                                <action selector="systemSettingAction:" destination="-1" eventType="touchUpInside" id="QF6-OA-ODT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3WK-Ba-kcd" secondAttribute="trailing" id="7Nm-zQ-8MN"/>
+                        <constraint firstAttribute="bottom" secondItem="3WK-Ba-kcd" secondAttribute="bottom" id="H4y-JG-i3z"/>
+                        <constraint firstItem="3WK-Ba-kcd" firstAttribute="leading" secondItem="nGV-cC-GLN" secondAttribute="leading" id="Y9g-aS-zT5"/>
+                        <constraint firstAttribute="height" constant="64" id="aXk-rM-UwL"/>
+                        <constraint firstAttribute="trailing" secondItem="Ug9-Tz-lHt" secondAttribute="trailing" constant="15" id="esJ-Wa-525"/>
+                        <constraint firstItem="3WK-Ba-kcd" firstAttribute="top" secondItem="nGV-cC-GLN" secondAttribute="top" id="nim-hs-rcN"/>
+                        <constraint firstItem="Ug9-Tz-lHt" firstAttribute="centerY" secondItem="nGV-cC-GLN" secondAttribute="centerY" constant="8" id="nlK-gw-A0t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mij-7O-ces" secondAttribute="trailing" id="8iA-fl-DWc"/>
+                <constraint firstAttribute="trailing" secondItem="nGV-cC-GLN" secondAttribute="trailing" id="LfF-uE-hfE"/>
+                <constraint firstAttribute="bottom" secondItem="Mij-7O-ces" secondAttribute="bottom" constant="49" id="R5m-bL-cHh"/>
+                <constraint firstItem="Mij-7O-ces" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d4p-Lc-8BX"/>
+                <constraint firstItem="nGV-cC-GLN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="no9-ej-msC"/>
+                <constraint firstItem="Mij-7O-ces" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y7k-3J-UON"/>
+                <constraint firstItem="nGV-cC-GLN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yoi-HX-day"/>
+            </constraints>
+            <point key="canvasLocation" x="-537" y="-73"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar" width="375" height="64"/>
+    </resources>
+</document>

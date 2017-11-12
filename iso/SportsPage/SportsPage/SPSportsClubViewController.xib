@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPSportsClubViewController">
+            <connections>
+                <outlet property="clubSettingButton" destination="NIL-iS-5OZ" id="9wK-rJ-QcX"/>
+                <outlet property="navBarImageView" destination="4Gk-3y-6cb" id="Whg-nl-yGl"/>
+                <outlet property="navBarView" destination="9bS-p1-uws" id="JjU-58-JMJ"/>
+                <outlet property="tableView" destination="Rgf-Ua-G3f" id="6Bf-Bf-1aE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-Ua-G3f">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXw-9Z-U7a">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bS-p1-uws">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar" translatesAutoresizingMaskIntoConstraints="NO" id="4Gk-3y-6cb"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uh-8s-DbQ">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3MQ-80-x4c"/>
+                                <constraint firstAttribute="height" constant="25" id="Fh8-jK-c93"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="navBar_back"/>
+                            <connections>
+                                <action selector="navBackAction:" destination="-1" eventType="touchUpInside" id="x5u-yd-jmJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIL-iS-5OZ">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="WWs-44-Gsw"/>
+                                <constraint firstAttribute="width" constant="32" id="ox2-TC-yQU"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="nav_Sports_more"/>
+                            <connections>
+                                <action selector="clubSettingAction:" destination="-1" eventType="touchUpInside" id="yi7-sp-2Lk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9bS-p1-uws" firstAttribute="top" secondItem="dXw-9Z-U7a" secondAttribute="top" id="48R-tY-ChR"/>
+                        <constraint firstAttribute="trailing" secondItem="NIL-iS-5OZ" secondAttribute="trailing" constant="15" id="4sd-jz-ZwB"/>
+                        <constraint firstItem="4Gk-3y-6cb" firstAttribute="top" secondItem="dXw-9Z-U7a" secondAttribute="top" id="C31-e4-fo5"/>
+                        <constraint firstItem="8Uh-8s-DbQ" firstAttribute="leading" secondItem="dXw-9Z-U7a" secondAttribute="leading" id="Cwe-RV-Gza"/>
+                        <constraint firstItem="8Uh-8s-DbQ" firstAttribute="centerY" secondItem="dXw-9Z-U7a" secondAttribute="centerY" constant="8" id="GV9-UT-pSm"/>
+                        <constraint firstAttribute="bottom" secondItem="4Gk-3y-6cb" secondAttribute="bottom" id="Sp1-jg-gk3"/>
+                        <constraint firstAttribute="trailing" secondItem="4Gk-3y-6cb" secondAttribute="trailing" id="Wuj-8N-sy2"/>
+                        <constraint firstItem="9bS-p1-uws" firstAttribute="leading" secondItem="dXw-9Z-U7a" secondAttribute="leading" id="fYv-VX-gTG"/>
+                        <constraint firstItem="4Gk-3y-6cb" firstAttribute="leading" secondItem="dXw-9Z-U7a" secondAttribute="leading" id="m7p-i7-xoL"/>
+                        <constraint firstAttribute="bottom" secondItem="9bS-p1-uws" secondAttribute="bottom" id="mSi-ks-RtA"/>
+                        <constraint firstAttribute="height" constant="64" id="nGK-9H-suC"/>
+                        <constraint firstItem="NIL-iS-5OZ" firstAttribute="centerY" secondItem="dXw-9Z-U7a" secondAttribute="centerY" constant="8" id="pil-B3-N2u"/>
+                        <constraint firstAttribute="trailing" secondItem="9bS-p1-uws" secondAttribute="trailing" id="qxR-5V-CQu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rgf-Ua-G3f" secondAttribute="bottom" id="Btv-fS-CRP"/>
+                <constraint firstAttribute="trailing" secondItem="dXw-9Z-U7a" secondAttribute="trailing" id="FWv-nq-Ael"/>
+                <constraint firstAttribute="trailing" secondItem="Rgf-Ua-G3f" secondAttribute="trailing" id="Wue-Wp-vP3"/>
+                <constraint firstItem="Rgf-Ua-G3f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ayS-Cp-o58"/>
+                <constraint firstItem="dXw-9Z-U7a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dzL-xs-ZFM"/>
+                <constraint firstItem="Rgf-Ua-G3f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fpC-zM-FCi"/>
+                <constraint firstItem="dXw-9Z-U7a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tWz-0h-p6u"/>
+            </constraints>
+            <point key="canvasLocation" x="-1452" y="-206"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar" width="375" height="64"/>
+        <image name="navBar_back" width="50" height="25"/>
+        <image name="nav_Sports_more" width="35" height="35"/>
+    </resources>
+</document>

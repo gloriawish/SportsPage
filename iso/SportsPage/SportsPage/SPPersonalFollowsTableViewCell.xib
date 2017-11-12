@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalFollowsCell" rowHeight="84" id="KGk-i7-Jjw" customClass="SPPersonalFollowsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-zT-KdV">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="RBp-zT-KdV" secondAttribute="height" multiplier="4:3" id="YXx-gg-UUf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是运动名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZt-0y-S2F">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发起人: Absolute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZX-Q3-x33">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是运动地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9e-T2-dQt">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEo-dm-J8g">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="YTe-Fu-zW6"/>
+                            <constraint firstAttribute="width" constant="56" id="oPg-Ug-iYh"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="Mine_focus_record_focus"/>
+                        <connections>
+                            <action selector="changeFocusStatusAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0oM-3E-pXD"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zKv-AI-vjb">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zKv-AI-vjb" secondAttribute="height" multiplier="1:1" id="ciW-VJ-nHw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zKv-AI-vjb" firstAttribute="trailing" secondItem="RBp-zT-KdV" secondAttribute="trailing" id="2jv-FU-Ur7"/>
+                    <constraint firstItem="zKv-AI-vjb" firstAttribute="bottom" secondItem="RBp-zT-KdV" secondAttribute="bottom" id="9bG-Y0-OEy"/>
+                    <constraint firstItem="lZt-0y-S2F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Bco-tV-Fly"/>
+                    <constraint firstItem="dEo-dm-J8g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dmm-2p-74A"/>
+                    <constraint firstItem="dEo-dm-J8g" firstAttribute="leading" secondItem="yZX-Q3-x33" secondAttribute="trailing" constant="10" id="IYf-7J-HOb"/>
+                    <constraint firstItem="RBp-zT-KdV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="L4x-XT-Hhc"/>
+                    <constraint firstAttribute="trailing" secondItem="dEo-dm-J8g" secondAttribute="trailing" constant="20" id="LIW-g7-bfc"/>
+                    <constraint firstItem="yZX-Q3-x33" firstAttribute="top" secondItem="lZt-0y-S2F" secondAttribute="bottom" constant="10" id="Qa0-wH-Cmc"/>
+                    <constraint firstItem="lZt-0y-S2F" firstAttribute="leading" secondItem="RBp-zT-KdV" secondAttribute="trailing" constant="10" id="WTa-87-lUZ"/>
+                    <constraint firstItem="zKv-AI-vjb" firstAttribute="height" secondItem="RBp-zT-KdV" secondAttribute="height" multiplier="9:35" id="f6f-xg-q5B"/>
+                    <constraint firstAttribute="bottom" secondItem="RBp-zT-KdV" secondAttribute="bottom" constant="7" id="hJw-fn-2cO"/>
+                    <constraint firstItem="dEo-dm-J8g" firstAttribute="leading" secondItem="lZt-0y-S2F" secondAttribute="trailing" constant="10" id="iFN-9r-tme"/>
+                    <constraint firstItem="RBp-zT-KdV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jS1-E1-Tmx"/>
+                    <constraint firstItem="dEo-dm-J8g" firstAttribute="leading" secondItem="j9e-T2-dQt" secondAttribute="trailing" constant="10" id="pTk-YN-zxB"/>
+                    <constraint firstItem="j9e-T2-dQt" firstAttribute="top" secondItem="yZX-Q3-x33" secondAttribute="bottom" constant="3" id="qJ5-ma-Pnv"/>
+                    <constraint firstItem="yZX-Q3-x33" firstAttribute="leading" secondItem="RBp-zT-KdV" secondAttribute="trailing" constant="10" id="ryp-h7-ltu"/>
+                    <constraint firstItem="j9e-T2-dQt" firstAttribute="leading" secondItem="RBp-zT-KdV" secondAttribute="trailing" constant="10" id="wnL-Xo-Y7a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentImageView" destination="RBp-zT-KdV" id="qbP-oF-U5q"/>
+                <outlet property="contentLabel" destination="lZt-0y-S2F" id="jHt-o8-dvF"/>
+                <outlet property="focusButton" destination="dEo-dm-J8g" id="ZL7-j0-gbf"/>
+                <outlet property="initiateLabel" destination="yZX-Q3-x33" id="fly-Lc-bBx"/>
+                <outlet property="locationLabel" destination="j9e-T2-dQt" id="6wT-aD-tcr"/>
+                <outlet property="typeImageView" destination="zKv-AI-vjb" id="XBs-cg-aUr"/>
+            </connections>
+            <point key="canvasLocation" x="-514" y="-59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Mine_focus_record_focus" width="56" height="56"/>
+    </resources>
+</document>

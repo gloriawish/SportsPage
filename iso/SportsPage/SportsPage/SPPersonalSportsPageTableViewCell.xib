@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalSportsPageCell" id="KGk-i7-Jjw" customClass="SPPersonalSportsPageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZC-ji-LPx">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AC0-kX-Sh0" userLabel="Second">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_focus_white" translatesAutoresizingMaskIntoConstraints="NO" id="08p-aP-1Jz"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pVj-s3-xIr">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pVj-s3-xIr" secondAttribute="height" multiplier="4:3" id="DsU-Kg-o2Y"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_star_3.5" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-r6-JwM">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SS0-r6-JwM" secondAttribute="height" multiplier="6:1" id="O22-42-HjT"/>
+                                            <constraint firstAttribute="width" constant="90" id="sUT-U9-Bc3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(已经激活10次)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiY-mc-NFe">
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动项目: 足球" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9O-xm-JNR">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动地址: 我是运动地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpt-GP-xKt">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hpt-GP-xKt" firstAttribute="leading" secondItem="pVj-s3-xIr" secondAttribute="trailing" constant="10" id="3fh-za-Xjp"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9O-xm-JNR" secondAttribute="trailing" constant="10" id="6mU-jO-tIo"/>
+                                    <constraint firstItem="f9O-xm-JNR" firstAttribute="top" secondItem="SS0-r6-JwM" secondAttribute="bottom" constant="10" id="A7Q-Ko-ybu"/>
+                                    <constraint firstItem="SS0-r6-JwM" firstAttribute="top" secondItem="AC0-kX-Sh0" secondAttribute="top" constant="10" id="Drr-NE-U81"/>
+                                    <constraint firstAttribute="bottom" secondItem="08p-aP-1Jz" secondAttribute="bottom" id="DvC-1x-5Bb"/>
+                                    <constraint firstItem="KiY-mc-NFe" firstAttribute="centerY" secondItem="SS0-r6-JwM" secondAttribute="centerY" id="MIU-H1-AeA"/>
+                                    <constraint firstItem="KiY-mc-NFe" firstAttribute="leading" secondItem="SS0-r6-JwM" secondAttribute="trailing" constant="10" id="UrZ-2G-o1c"/>
+                                    <constraint firstItem="08p-aP-1Jz" firstAttribute="leading" secondItem="AC0-kX-Sh0" secondAttribute="leading" id="Voc-Lo-WtX"/>
+                                    <constraint firstAttribute="trailing" secondItem="hpt-GP-xKt" secondAttribute="trailing" constant="10" id="aGy-ez-lpD"/>
+                                    <constraint firstItem="hpt-GP-xKt" firstAttribute="top" secondItem="f9O-xm-JNR" secondAttribute="bottom" constant="3" id="awA-ml-GKR"/>
+                                    <constraint firstItem="f9O-xm-JNR" firstAttribute="leading" secondItem="pVj-s3-xIr" secondAttribute="trailing" constant="10" id="cqb-Qg-hYh"/>
+                                    <constraint firstItem="pVj-s3-xIr" firstAttribute="leading" secondItem="AC0-kX-Sh0" secondAttribute="leading" constant="10" id="h21-Lp-4wx"/>
+                                    <constraint firstItem="08p-aP-1Jz" firstAttribute="top" secondItem="AC0-kX-Sh0" secondAttribute="top" id="iSa-2Z-ck0"/>
+                                    <constraint firstAttribute="bottom" secondItem="pVj-s3-xIr" secondAttribute="bottom" constant="10" id="ip7-uA-YZn"/>
+                                    <constraint firstItem="pVj-s3-xIr" firstAttribute="top" secondItem="AC0-kX-Sh0" secondAttribute="top" constant="10" id="jHb-1z-uxd"/>
+                                    <constraint firstItem="SS0-r6-JwM" firstAttribute="leading" secondItem="pVj-s3-xIr" secondAttribute="trailing" constant="10" id="oCY-fI-T1b"/>
+                                    <constraint firstAttribute="trailing" secondItem="08p-aP-1Jz" secondAttribute="trailing" id="tiG-6D-W3v"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJL-to-3xL" userLabel="First">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_focus_white" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-w0-t4b"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sports_focus_line" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-QE-mms">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="aUq-Kt-Giz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是运动名称这是运动名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9E-yB-eFn">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mine_sportsPage_active" translatesAutoresizingMaskIntoConstraints="NO" id="WpT-uy-lih">
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WpT-uy-lih" secondAttribute="height" multiplier="1:1" id="sq6-wH-1cv"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WpT-uy-lih" secondAttribute="trailing" id="6JV-6R-C2t"/>
+                                    <constraint firstItem="kgI-w0-t4b" firstAttribute="leading" secondItem="dJL-to-3xL" secondAttribute="leading" id="94c-kt-rtA"/>
+                                    <constraint firstItem="WpT-uy-lih" firstAttribute="top" secondItem="dJL-to-3xL" secondAttribute="top" id="HHY-qL-d35"/>
+                                    <constraint firstItem="kgI-w0-t4b" firstAttribute="top" secondItem="dJL-to-3xL" secondAttribute="top" id="OGp-R4-Jw6"/>
+                                    <constraint firstItem="x9E-yB-eFn" firstAttribute="leading" secondItem="dJL-to-3xL" secondAttribute="leading" constant="10" id="PK8-MQ-UZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="fcd-QE-mms" secondAttribute="trailing" id="W9C-NW-drZ"/>
+                                    <constraint firstItem="WpT-uy-lih" firstAttribute="leading" secondItem="x9E-yB-eFn" secondAttribute="trailing" constant="5" id="YYD-rZ-Ws1"/>
+                                    <constraint firstAttribute="trailing" secondItem="kgI-w0-t4b" secondAttribute="trailing" id="cZF-eb-H9m"/>
+                                    <constraint firstItem="fcd-QE-mms" firstAttribute="leading" secondItem="dJL-to-3xL" secondAttribute="leading" id="gEY-hO-oct"/>
+                                    <constraint firstAttribute="bottom" secondItem="kgI-w0-t4b" secondAttribute="bottom" id="lky-hX-qBP"/>
+                                    <constraint firstItem="WpT-uy-lih" firstAttribute="height" secondItem="dJL-to-3xL" secondAttribute="height" multiplier="53:35" id="nDm-G4-M8s"/>
+                                    <constraint firstItem="x9E-yB-eFn" firstAttribute="centerY" secondItem="dJL-to-3xL" secondAttribute="centerY" id="pbC-sL-cb5"/>
+                                    <constraint firstAttribute="bottom" secondItem="fcd-QE-mms" secondAttribute="bottom" id="xOP-ku-4Br"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dJL-to-3xL" secondAttribute="trailing" id="1Gj-Ay-jdg"/>
+                            <constraint firstAttribute="bottom" secondItem="AC0-kX-Sh0" secondAttribute="bottom" id="5a6-br-rKC"/>
+                            <constraint firstAttribute="trailing" secondItem="AC0-kX-Sh0" secondAttribute="trailing" id="8hb-2a-0hh"/>
+                            <constraint firstItem="AC0-kX-Sh0" firstAttribute="top" secondItem="dJL-to-3xL" secondAttribute="bottom" id="EBc-0z-CFh"/>
+                            <constraint firstItem="AC0-kX-Sh0" firstAttribute="leading" secondItem="zZC-ji-LPx" secondAttribute="leading" id="gwC-LQ-niE"/>
+                            <constraint firstItem="dJL-to-3xL" firstAttribute="top" secondItem="zZC-ji-LPx" secondAttribute="top" id="hMm-1C-7qw"/>
+                            <constraint firstItem="dJL-to-3xL" firstAttribute="height" secondItem="zZC-ji-LPx" secondAttribute="height" multiplier="7:25" id="x9W-YT-LcW"/>
+                            <constraint firstItem="dJL-to-3xL" firstAttribute="leading" secondItem="zZC-ji-LPx" secondAttribute="leading" id="zON-1K-FB6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="zZC-ji-LPx" secondAttribute="trailing" constant="10" id="8VB-qf-fkl"/>
+                    <constraint firstItem="zZC-ji-LPx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="RdW-aF-cqt"/>
+                    <constraint firstAttribute="bottom" secondItem="zZC-ji-LPx" secondAttribute="bottom" constant="5" id="oYO-MF-IWI"/>
+                    <constraint firstItem="zZC-ji-LPx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="uQ2-3K-rSd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activeTimesLabel" destination="KiY-mc-NFe" id="QJj-xs-tAu"/>
+                <outlet property="dataView" destination="zZC-ji-LPx" id="hUa-yM-7wO"/>
+                <outlet property="eventLabel" destination="f9O-xm-JNR" id="i0x-9d-47b"/>
+                <outlet property="headImageView" destination="pVj-s3-xIr" id="DmR-o1-mjT"/>
+                <outlet property="locationLabel" destination="hpt-GP-xKt" id="VBz-uc-acT"/>
+                <outlet property="starImageView" destination="SS0-r6-JwM" id="0HQ-Nf-UTB"/>
+                <outlet property="statusImageView" destination="WpT-uy-lih" id="402-pj-Uu5"/>
+                <outlet property="titleLabel" destination="x9E-yB-eFn" id="bGW-ud-YAU"/>
+            </connections>
+            <point key="canvasLocation" x="-1059" y="-26"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Mine_sportsPage_active" width="53" height="53"/>
+        <image name="Sports_focus_line" width="1" height="1"/>
+        <image name="Sports_focus_white" width="355" height="112"/>
+        <image name="Sports_star_3.5" width="95" height="15"/>
+    </resources>
+</document>

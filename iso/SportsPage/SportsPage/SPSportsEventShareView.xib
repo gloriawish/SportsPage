@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SPSportsEventShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlF-vj-Rx8">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="BUU-HW-Rpx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8m-J0-I25" userLabel="LineView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="0J4-Z4-kzj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SVm-PG-yIp" userLabel="LineView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="beo-Dj-kBH"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRx-aC-qp7">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Dbh-xk-F4t"/>
+                        <constraint firstAttribute="height" constant="50" id="lWR-OM-aGf"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Sports_main_share_weChat"/>
+                    <connections>
+                        <action selector="shareWeChatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="yYB-n0-V5f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91Y-yK-6pp">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Pxa-VM-fHg"/>
+                        <constraint firstAttribute="height" constant="50" id="X2n-ka-MF7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Sports_main_share_weChatFriends"/>
+                    <connections>
+                        <action selector="shareWeChatFriendsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="TZb-Yp-rAN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lit-U0-VD3">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="TJH-Gv-xFY"/>
+                        <constraint firstAttribute="height" constant="50" id="c0d-Vz-G9f"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="Sports_main_share_sportsPage"/>
+                    <connections>
+                        <action selector="shareWeChatSportsPageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ezn-DR-daF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tg1-71-Sdu">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV3-eu-h0C">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运动页好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dq6-p4-NZm">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PlF-vj-Rx8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="18o-ID-SFc"/>
+                <constraint firstItem="pRx-aC-qp7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4U5-Tl-eQ6"/>
+                <constraint firstItem="MV3-eu-h0C" firstAttribute="centerX" secondItem="pRx-aC-qp7" secondAttribute="centerX" id="4dY-ym-Mi1"/>
+                <constraint firstItem="dq6-p4-NZm" firstAttribute="centerX" secondItem="lit-U0-VD3" secondAttribute="centerX" id="6Ga-3u-h1F"/>
+                <constraint firstItem="MV3-eu-h0C" firstAttribute="top" secondItem="pRx-aC-qp7" secondAttribute="bottom" constant="10" id="GNa-dq-tqK"/>
+                <constraint firstItem="pRx-aC-qp7" firstAttribute="centerY" secondItem="91Y-yK-6pp" secondAttribute="centerY" id="Lok-gz-GCo"/>
+                <constraint firstItem="PlF-vj-Rx8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O79-Cr-S6z"/>
+                <constraint firstItem="h8m-J0-I25" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="WqO-Bt-kN6"/>
+                <constraint firstItem="SVm-PG-yIp" firstAttribute="centerY" secondItem="PlF-vj-Rx8" secondAttribute="centerY" id="XcR-I6-CUL"/>
+                <constraint firstItem="PlF-vj-Rx8" firstAttribute="leading" secondItem="h8m-J0-I25" secondAttribute="trailing" constant="10" id="YXa-oe-rcU"/>
+                <constraint firstItem="SVm-PG-yIp" firstAttribute="leading" secondItem="PlF-vj-Rx8" secondAttribute="trailing" constant="10" id="Yis-T3-Nhf"/>
+                <constraint firstItem="91Y-yK-6pp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="aQl-y5-xLV"/>
+                <constraint firstAttribute="trailing" secondItem="SVm-PG-yIp" secondAttribute="trailing" constant="10" id="hus-kQ-myr"/>
+                <constraint firstItem="lit-U0-VD3" firstAttribute="centerY" secondItem="pRx-aC-qp7" secondAttribute="centerY" id="jhO-33-PNR"/>
+                <constraint firstItem="Tg1-71-Sdu" firstAttribute="centerX" secondItem="91Y-yK-6pp" secondAttribute="centerX" id="jrO-XE-u5F"/>
+                <constraint firstAttribute="trailing" secondItem="lit-U0-VD3" secondAttribute="trailing" constant="36" id="moo-ds-ag6"/>
+                <constraint firstItem="pRx-aC-qp7" firstAttribute="top" secondItem="PlF-vj-Rx8" secondAttribute="bottom" constant="20" id="qds-Hi-Upf"/>
+                <constraint firstItem="dq6-p4-NZm" firstAttribute="top" secondItem="lit-U0-VD3" secondAttribute="bottom" constant="10" id="teG-vj-KeW"/>
+                <constraint firstItem="PlF-vj-Rx8" firstAttribute="centerY" secondItem="h8m-J0-I25" secondAttribute="centerY" id="tko-K8-8aJ"/>
+                <constraint firstItem="Tg1-71-Sdu" firstAttribute="top" secondItem="91Y-yK-6pp" secondAttribute="bottom" constant="10" id="wa0-9o-qxO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftLineView" destination="h8m-J0-I25" id="4mv-Tf-DRw"/>
+                <outlet property="rightConstraint" destination="moo-ds-ag6" id="kns-fH-E01"/>
+                <outlet property="rightLineView" destination="SVm-PG-yIp" id="cKa-Hc-2rx"/>
+                <outlet property="weChatSessionButton" destination="91Y-yK-6pp" id="MGL-hC-9CK"/>
+                <outlet property="weChatSessionLabel" destination="Tg1-71-Sdu" id="o5f-wf-9ow"/>
+                <outlet property="weChatTimeLineButton" destination="pRx-aC-qp7" id="Jwa-jt-b4F"/>
+                <outlet property="weChatTimeLineLabel" destination="MV3-eu-h0C" id="xkA-EU-ga9"/>
+            </connections>
+            <point key="canvasLocation" x="-725" y="108"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sports_main_share_sportsPage" width="50" height="50"/>
+        <image name="Sports_main_share_weChat" width="50" height="50"/>
+        <image name="Sports_main_share_weChatFriends" width="50" height="50"/>
+    </resources>
+</document>
